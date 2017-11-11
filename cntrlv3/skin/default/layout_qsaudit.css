@@ -1,0 +1,275 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  QSApp                                                        *
+*  Site        :  http://qsapp.facilitator-mxes.com				          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  matt.barfoot@clearview-webmedia.co.uk                        *
+*  Created     :  13/03/2007                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+* {list-style: none;	margin: 0; padding: 0; font-family: Arial, Sans-Serif; font-size: 1em;}
+img {border: 0;}
+fieldset {border: 0;}	
+
+
+/*******************************************************************************/
+/* ------------------/ DebugDIV /----------------------------------------------- */
+/*******************************************************************************/
+div#debugDIV {position: absolute;top: 1em;right: 1em;width: 350px;border:1px solid red;padding: 1em; z-index: 1000000000; background-color: #f2f2f2; font-size: 0.8em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Journal DIV /----------------------------------------------- */
+/*******************************************************************************/
+div#JOURNALdata {position: absolute; top: 600px; left: 220px; width: 500px; border:2px solid #00008B; padding: 6px; height: 360px; z-index: 1000000000; background-color: White; font-size: 0.8em;}
+a#close_JOURNALdata {position: absolute; bottom: 0;	right: 1em;}
+
+div#JOURNALdata div#JOURNAL_content {position: relative; padding: 3px; height: 350px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form {position: relative; height: 260px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset label {font-size: 0.9em;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset input {font-size: 0.9em;}
+
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row1 label#lbl_enterdate 		{position: absolute; top: 8px;   left: 0px; 	 width: 125px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row1 label#lbl_description		{position: absolute; top: 8px;   left: 175px; width: 125px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row1 input#enterdate		 		{position: absolute; top: 28px;  left: 0px;   width: 125px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row1 input#description 			{position: absolute; top: 28px;  left: 175px; width: 275px;}
+
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row2 label#lbl_enterby 			{position: absolute; top: 58px;  left: 0px;    width: 100px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row2 label#lbl_phone 				{position: absolute; top: 58px;  left: 175px;  width: 100px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row2 label#lbl_journal_type 	{position: absolute; top: 58px;  left: 300px;  width: 100px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row2 input#enterby 				{position: absolute; top: 78px;  left: 0px;    width: 100px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row2 input#phone 					{position: absolute; top: 78px;  left: 175px;  width: 100px;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row2 input#journal_type 			{position: absolute; top: 78px;  left: 300px;  width: 100px;}
+
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_form fieldset#row3 textarea#longdescription 	{position: absolute; top: 108px;  left: 0px;  width: 450px; height: 120px;}
+
+
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_topnav {height: 25px; border-bottom: 2px solid #6E70FF; position: relative;}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_topnav a {text-decoration: none; padding: 2px; font-weight: bold; color: #00018A}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_topnav a:hover {text-decoration: underline; padding: 2px; font-weight: bold; color: #00018A}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_topnav span#JOURNAL_topnav_prev {position: absolute; left: 1em; top: -6px; color: #00018A}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_topnav span#JOURNAL_topnav_txt {position: absolute; left: 200px; top: 3px; color: #00018A}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_topnav span#JOURNAL_topnav_next {position: absolute; right: 1em; top: -6px; color: #00018A}
+div#JOURNALdata div#JOURNAL_content div#JOURNAL_footnav {position: absolute; bottom: 35px; height: 25px; padding-top: 6px; border-top: 2px solid #6E70FF; width: 100%	}
+
+div.noRecFound {color: #6E70FF; font-size: 2em; padding-top: 4em;}
+
+/*******************************************************************************/
+/* ------------------/ Custom Error Content /---------------------------------- */
+/*******************************************************************************/
+div#error_content {height: 450px; padding-top: 1em;}
+div#error_content h1 {font-size: 2em; color: red;}
+div#error_content p {padding-top: 6px; padding-bottom: 6px;}
+
+/*******************************************************************************/
+/* ------------------/ HEADER /----------------------------------------------- */
+/*******************************************************************************/
+div#header {}
+div#header div#header_top {height: 3px; background-color: #335087; font-size: 0;}
+div#header div#header_bot {height: 3px; background-color: #335087; font-size: 0;}
+div#header div#header_main {height: 69px; background-color: #002469; position: relative;}
+div#header div#header_main a#qsa_logo {position: absolute; top: 2px; left: 7px;}
+div#header div#header_main a#rbs_logo {position: absolute; top: 2px; right: 1em;}
+div#header div#header_main div#header_nav_top {position: absolute; top: 10px; left: 250px;  font-size: 10px; color: White;}
+div#header div#header_main div#header_nav_top a {text-decoration: none; color: White;}
+div#header div#header_main div#header_nav_top a:hover {text-decoration: underline;}
+div#header div#header_main div#header_nav_main {position: absolute; top: 30px; left: 250px; color: White; font-size: 1.2em; border-top: 1px solid white; padding: 3px;}
+div#header div#header_main div#header_nav_main a {text-decoration: none; color: White; padding: 3px;}
+div#header div#header_main div#header_nav_main a:hover {text-decoration: underline; background-color: #1A3A78;}
+/*******************************************************************************/
+/* ------------------/ MAIN /------------------------------------------------- */
+/*******************************************************************************/
+div#main {padding: 1em 6px 0.6em;}
+div#main div#tabs {}
+div#main div#content_wrapper {background-color: #f4f4f4; border:1px solid #cccccc; padding: 7px;}
+
+/*******************************************************************************/
+/* ------------------/ "Loading Data... " SPAN /------------------------------------------------- */
+/*******************************************************************************/
+div#main span#WODETAIL-loading {position: absolute; top: 100px; right: 100px; display: block; color:#00008B; background-color: #CAD0D7;
+width: 250px; height: 100px; border:1px solid Black; font-size: 2em; text-align: center; filter: alpha(Opacity=70); -moz-opacity:0.7;}
+
+/*******************************************************************************/
+/* ------------------/ LoggedInAs /-------------------------------------------- */
+/*******************************************************************************/
+div#main div#loggedInAs {position: absolute; top: 83px; left: 800px; color: #00008B; font-size: 0.7em;}
+/*******************************************************************************/
+/* ------------------/ TABS /------------------------------------------------- */
+/*******************************************************************************/
+div#main div#tabs {font-size: 0.8em; font-weight: bold; clear: both;	text-align: left;}
+div#main div#tabs ul {display: inline;	list-style-type: none; margin: 0;padding: 0; cursor: pointer;}
+div#main div#tabs li { display: inline; margin:0;}
+div#main div#tabs a, div#main div#tabs span {}
+div#main div#tabs li a {background-color: #002469;  position: relative;	top: -2px;	margin-right: -1px; margin-left:-1px;	border-right: 1px solid #666;	
+border-top: 1px solid #666; border-left: 1px solid #666;	padding: 3px 6px 3px;	text-decoration: none;	color: #FFF;}
+div#main div#tabs li a.tabunselected:hover {background-color: #2C60C6;}	
+div#main div#tabs li a.tabselected {background-color: #1F499E;}	
+div#main div#tabs li a.tabunselected {background-color: #002469;}	
+div#main div#tabs a {position: relative; top: 0;	margin: 1px 2px 0 0;	background-color: #FFFAE1;	border-right: 1px solid #AAA;
+	border-top: 1px solid #AAA; border-left: 1px solid #AAA;	padding: 5px 4px 5px 10px;	text-decoration: none;	color: #333;
+	cursor: pointer;}
+
+
+
+
+/*******************************************************************************/
+/* ------------------/ QSAFILTER /--------------------------------------------- */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_filter {position: relative; background-color: #E3E8F3; border:1px solid #99AFD6; padding: 4px;}
+div#main div#content_wrapper div#qsa_filter div#qsa_filter_title {font-size: 1.2em;	font-style: italic; 	color: #7488AE}
+
+
+/*******************************************************************************/
+/* ------------------/ QSAFILTERFORM /---------------------------------------- */
+/*******************************************************************************/
+/* Form Defaults */
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form {position: relative; }
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form label {height: 18px; background-color: #566E9D; color: White; font-size: 0.8em; padding: 3px; display: block; margin-bottom: 4px; font-weight: bold; }
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form input {padding: 2px; border: 2px solid #435D90; color: #435D90; font-size: 0.9em;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form select {padding: 2px; border: 2px solid #435D90; color: #435D90; font-size: 0.9em;}
+
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form fieldset {position: relative; margin-top: 3px;}
+
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldSupplierWrapper {width: 155px; height: 55px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldSupplierWrapper label {width: 155px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldSupplierWrapper input {}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldSupplierWrapper input.fldReadOnly {background-color: #E8E8E8;}
+
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldWorkTypeWrapper {position: absolute; top: 0px; left: 180px; width: 130px; height: 55px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldWorkTypeWrapper label {width: 155px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldWorkTypeWrapper select {width: 155px; border: 2px solid #435D90; height:22px;}
+
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFinCompDateRangeWrapper {position: absolute; top: 0px; left: 360px; width: 350px; height: 55px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFinCompDateRangeWrapper label {width: 288px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFinCompDateRangeWrapper input {width: 120px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFinCompDateRangeWrapper img {position: absolute; top: 27px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFinCompDateRangeWrapper input#fldFinCompStart {}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFinCompDateRangeWrapper input#fldFinCompEnd {margin-left: 30px;}
+
+
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldAuditStatusWrapper {position: absolute; top: 0px; left: 680px; width: 115px; height: 55px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldAuditStatusWrapper label {width: 115px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldAuditStatusWrapper input {width: 115px;}
+
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFrmSubmitWrapper {position: absolute; top: 28px; left: 810px; width: 130px; height: 70px;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFrmSubmitWrapper input {border: 0;}
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFrmSubmitWrapper input#fldFrmSubmit {position: absolute; top: 0px; left: 0px;} 
+div#main div#content_wrapper div#qsa_filter  form#qsa_filter_form div#fldFrmSubmitWrapper input#fldFrmClear {position: absolute; top: 0px; left: 75px;} 
+/*******************************************************************************/
+/* ------------------/ QSACONTENT /------------------------------------------- */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_content {position: relative; background-color: #FFF; border:1px solid #99AFD6; padding: 7px; margin-top: 6px;}
+
+
+/*******************************************************************************/
+/* ------------------/ QSA ACTIONS HEADER /------------------------------------ */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_content div#qsa_actions_header {position: relative; margin-top: 1em; margin-bottom: 2.5em; padding-top: 4px;}
+
+/*----left aligned formatting options ----*/
+div#qsa_actions_header span#qsa_ah_woqueue_tableheader {position: absolute; left: 0em; color: black; font-size: 1.4em;}
+div#qsa_actions_header span#qsa_ah_woqueue_tableheader span.txtBlue {color: #435D90;}
+
+/*----right aligned submit options ----*/
+div#qsa_actions_header span#qsa_ah_submit_options {position: absolute; right: 1.4em; top: -5px;}
+div#qsa_actions_header span#qsa_ah_submit_options  a {padding-left: 5px;}
+div#qsa_actions_header span#qsa_ah_submit_options  a img {margin-bottom: 0px;}
+
+
+/*******************************************************************************/
+/* ------------------/ QSA ACTIONS FOOTER /------------------------------------ */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_content div#qsa_actions_footer {position: relative; border-top: 1px solid #99AFD6; margin-top: 1em; margin-bottom: 2.5em; padding-top: 14px;}
+
+/*----left aligned formatting options ----*/
+div#qsa_actions_footer span#qsa_af_format_options {position: absolute; left: 0em; color: #435D90; font-size: 0.7em; font-weight: bold; width: 450px; height: 30px;}
+div#qsa_actions_footer span#qsa_af_format_options a#linkOptionSelectAll {position: absolute; top: 0px; left: 60px;}
+div#qsa_actions_footer span#qsa_af_format_options a#linkOptionSelectNone {position: absolute; top: 0px; left: 138px;}
+div#qsa_actions_footer span#qsa_af_format_options a img {margin-bottom: 0;}
+div#qsa_actions_footer span#qsa_af_format_options form#qsa_frm_format_options {position: absolute; left:250px; top: -3px; display: inline; padding-left: 1em;}
+div#qsa_actions_footer span#qsa_af_format_options form#qsa_frm_format_options input#fldFormatOptionRowPerPage {padding: 2px; border: 1px solid #435D90; color: #435D90; background-color: #F0F0F0; font-size: 0.9em; width: 1.6em;}
+
+/*----right aligned submit options ----*/
+div#qsa_actions_footer span#qsa_af_submit_options {position: absolute; right: 1.4em;}
+div#qsa_actions_footer span#qsa_af_submit_options  a {padding-left: 5px;}
+div#qsa_actions_footer span#qsa_af_submit_options  a img {margin-bottom: 0px;}
+
+/*******************************************************************************/
+/* ------------------/ QSA WORKORDER QUEUE /--------------------------------- */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_content div#qsa_wo_queue {
+	position: relative; /*padding: 1em; border: 1px solid #ccc; background-color: #F1F1F1; */ color: Black; font-size: 1em;} 
+
+	
+div#main div#content_wrapper div#qsa_content div#qsa_postvalidated_results	{color: Green; font-size: 1.4em; padding: 4px; border:1px solid #002469; margin-bottom: 1em; margin-top: 1em;}
+
+
+/*******************************************************************************/
+/* ------------------/ QSA WORKORDER VALIDATION SUMMARY TABLE POSITION /------- */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_content div#qsa_wo_queue div#qsa_wo_summaryWrapper {position: relative; margin-top: 1em; height: 70px; }
+div#main div#content_wrapper div#qsa_content div#qsa_wo_queue div#qsa_wo_summaryWrapper div#qsa_wo_summary {position: absolute; width: 500px; right: 1em;}
+	
+/*******************************************************************************/
+/* ------------------/ QSA IMPORT /--------------------------------------------- */
+/*******************************************************************************/
+div#main div#content_wrapper div#qsa_content div#qsa_import {
+	position: relative; /*padding: 1em; border: 1px solid #ccc; background-color: #F1F1F1; */ color: Black; font-size: 0.9em; width: 700px;} 
+div#main div#content_wrapper div#qsa_content div#qsa_import p {margin: 8px 0px; font-size: 0.9em;}
+div#main div#content_wrapper div#qsa_content div#qsa_import p.note {margin: 16px 0px; padding: 6px; border: 1px solid #002469; color: #002469}
+div#main div#content_wrapper div#qsa_content div#qsa_import input.impFile 	 {font-size: 0.9em;}	
+div#main div#content_wrapper div#qsa_content div#qsa_import input.impSubmit {width: 100px; margin-left: 1em; font-size: 0.9em;}
+
+div#main div#content_wrapper div#qsa_content div#qsa_import div#importResults {margin: 16px 0px; padding: 6px; border: 1px solid #006400; color: #004001}
+
+
+/*******************************************************************************/
+/* ------------------/ FOOTER /----------------------------------------------- */
+/*******************************************************************************/
+div#footer {color: #002469; position: relative; font-size: 10px; height: 20px; width: 991px;}
+div#footer span#copyr {position: absolute; left: 7px;}
+div#footer span#legalpriv {position: absolute; right: 7px;}
+div#footer span#legalpriv a {color: #002469;	}
+
+
+
+/*******************************************************************************/
+/* ------------------/ IE MIN WIDTH HACKS /------------------------------------ */
+/*******************************************************************************/
+
+
+* html div#main {width: 991px;}
+
+/*
+* html body {border-left:800px solid red;}
+* html div#header {margin-left: -800px;}
+* html div#main {margin-left: -800px;}
+* html div#main {margin-left: -800px;}
+* html div#main div#content_wrapper div#qsa_filter {} */
+
+
+
+/* ------------------/ Container /-------------------------------------------- */
+#feedbackFormContainer {background-color: White; border: 1px solid Black; padding:0.7em; }
+
+/* ------------------/ Form /-------------------------------------------- */
+#feedbackFormContainer form 										{font-size: 0.8em;}
+#feedbackFormContainer form span.fieldsetTitle				{font-weight: Bold;}
+#feedbackFormContainer form fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.8em 0em; border-top: 1px solid black; border-bottom: 1px solid #B9B9B9;}
+#feedbackFormContainer form fieldset p						{margin: 0.8em 0em; clear: left}
+#feedbackFormContainer form fieldset p label				{text-align: right; float: left; width:125px; padding-right: 20px;}
+#feedbackFormContainer form fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+#feedbackFormContainer form fieldset p label.extralong  {text-align: left; float: left; width:530px; padding-right: 10px;}
+#feedbackFormContainer form fieldset p label.long span	{padding-left: 20px;}
+#feedbackFormContainer form fieldset p label.fldinline  {text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+#feedbackFormContainer form fieldset p input				{width: 357px; color: Navy}
+#feedbackFormContainer form fieldset p select			{width: 250px; }
+#feedbackFormContainer form fieldset p input.small		{width: 125px; }
+#feedbackFormContainer form fieldset p input.med			{width: 200px; }
+#feedbackFormContainer form fieldset p input.btn			{width: 125px; } 
+#feedbackFormContainer form fieldset p input.radiobtn	{width: 25px; } 
+#feedbackFormContainer form fieldset p textarea		   {width: 357px; height: 100px;} 

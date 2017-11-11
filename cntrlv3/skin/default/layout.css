@@ -1,0 +1,138 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  Control Panel                                                *
+*  Site        :  http://cntrl.clearview-webmedia.co.uk			          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  matt.barfoot@clearview-webmedia.co.uk                        *
+*  Created     :  13/03/2007                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+* {list-style: none;	margin: 0; padding: 0; font-family: Arial, Sans-Serif; font-size: 1em;}
+img {border: 0;}
+fieldset {border: 0;}	
+
+
+/*******************************************************************************/
+/* ------------------/ DebugDIV /----------------------------------------------- */
+/*******************************************************************************/
+div#debugDIV {position: absolute;top: 1em;right: 1em;width: 350px;border:1px solid red;padding: 1em; z-index: 1000000000; background-color: #f2f2f2; font-size: 0.8em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Custom Error Content /---------------------------------- */
+/*******************************************************************************/
+div#error_content {height: 450px; padding-top: 1em;}
+div#error_content h1 {font-size: 2em; color: red;}
+div#error_content p {padding-top: 6px; padding-bottom: 6px;}
+
+/*******************************************************************************/
+/* ------------------/ HEADER /----------------------------------------------- */
+/*******************************************************************************/
+div#header {}
+div#header div#header_top {height: 3px; background-color: #006400; font-size: 0;}
+div#header div#header_bot {height: 3px; background-color: #006400; font-size: 0;}
+div#header div#header_main {height: 69px; background-color: #009001; position: relative;}
+div#header div#header_main a#cntrl_logo {position: absolute; top: 2px; left: 7px;}
+div#header div#header_main a#client_logo {position: absolute; top: 2px; right: 1em;}
+div#header div#header_main div#header_nav_top {position: absolute; top: 10px; left: 250px;  font-size: 10px; color: White;}
+div#header div#header_main div#header_nav_top a {text-decoration: none; color: White;}
+div#header div#header_main div#header_nav_top a:hover {text-decoration: underline;}
+div#header div#header_main div#header_nav_main {position: absolute; top: 30px; left: 250px; color: White; font-size: 1.2em; border-top: 1px solid white; padding: 3px;}
+div#header div#header_main div#header_nav_main a {text-decoration: none; color: White; padding: 3px;}
+div#header div#header_main div#header_nav_main a:hover {text-decoration: underline; background-color: #1A681A;}
+
+/*******************************************************************************/
+/* ------------------/ MAIN /------------------------------------------------- */
+/*******************************************************************************/
+div#main {padding: 1em 6px 0.6em;}
+div#main div#tabs {}
+div#main div#content_wrapper {background-color: #f4f4f4; border:1px solid #aaa; padding: 7px; /*min-height:350px;*/ }
+
+/* for Internet Explorer */
+/*\*/
+div#main div#content_wrapper {/*height: 350px;*/}
+/**/
+
+/*******************************************************************************/
+/* ------------------/ CONTENT /------------------------------------------------- */
+/*******************************************************************************/
+div#main div#content_wrapper div#content h1.actionTitle {margin-top: 1em; color: #6C6C6C;}
+
+/*******************************************************************************/
+/* ------------------/ "Loading Data... " SPAN /------------------------------------------------- */
+/*******************************************************************************/
+div#main span#content-loading {position: absolute; top: 100px; right: 100px; display: block; color:#00008B; background-color: #CAD0D7;
+width: 250px; height: 100px; border:1px solid Black; font-size: 2em; text-align: center; filter: alpha(Opacity=70); -moz-opacity:0.7;}
+
+/*******************************************************************************/
+/* ------------------/ LoggedInAs /-------------------------------------------- */
+/*******************************************************************************/
+div#main div#loggedInAs {position: absolute; top: 83px; left: 800px; color: #006400; font-size: 0.7em;}
+
+/*******************************************************************************/
+/* ------------------/ TABS /------------------------------------------------- */
+/*******************************************************************************/
+div#main div#tabs {font-size: 0.8em; font-weight: bold; clear: both;	text-align: left;}
+div#main div#tabs ul {display: inline;	list-style-type: none; margin: 0;padding: 0; cursor: pointer;}
+div#main div#tabs li { display: inline; margin:0;}
+div#main div#tabs a, div#main div#tabs span {}
+div#main div#tabs li a {background-color: #002469;  position: relative;	top: -2px;	margin-right: -1px; margin-left:-1px;	border-right: 1px solid #666;	
+border-top: 1px solid #666; border-left: 1px solid #666;	padding: 3px 6px 3px;	text-decoration: none;	color: #FFF;}
+div#main div#tabs li a.tabunselected:hover {background-color: #1A681A;}	
+div#main div#tabs li a.tabselected {background-color: #f2f2f2; color: #000}	
+div#main div#tabs li a.tabunselected {background-color: #209321;}	
+div#main div#tabs a {position: relative; top: 0;	margin: 1px 2px 0 0;	background-color: #FFFAE1;	border-right: 1px solid #AAA;
+	border-top: 1px solid #AAA; border-left: 1px solid #AAA;	padding: 5px 4px 5px 10px;	text-decoration: none;	color: #333;
+	cursor: pointer;}
+
+
+/*******************************************************************************/
+/* ------------------/ FOOTER /----------------------------------------------- */
+/*******************************************************************************/
+div#footer {color: #006400; position: relative; font-size: 10px; height: 20px; /*width: 991px;*/}
+div#footer span#copyr {position: absolute; left: 7px;}
+div#footer span#legalpriv {position: absolute; right: 14px;}
+div#footer span#legalpriv a {color: #006400;	}
+
+
+
+/*******************************************************************************/
+/* ------------------/ IE MIN WIDTH HACKS /------------------------------------ */
+/*******************************************************************************/
+
+
+* html div#main {width: 991px;}
+
+/*
+* html body {border-left:800px solid red;}
+* html div#header {margin-left: -800px;}
+* html div#main {margin-left: -800px;}
+* html div#main {margin-left: -800px;}
+* html div#main div#content_wrapper div#qsa_filter {} */
+
+
+
+/* ------------------/ Container /-------------------------------------------- */
+#feedbackFormContainer {background-color: White; border: 1px solid Black; padding:0.7em; }
+
+/* ------------------/ Form /-------------------------------------------- */
+#feedbackFormContainer form 										{font-size: 0.8em;}
+#feedbackFormContainer form span.fieldsetTitle				{font-weight: Bold;}
+#feedbackFormContainer form fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.8em 0em; border-top: 1px solid black; border-bottom: 1px solid #B9B9B9;}
+#feedbackFormContainer form fieldset p						{margin: 0.8em 0em; clear: left}
+#feedbackFormContainer form fieldset p label				{text-align: right; float: left; width:125px; padding-right: 20px;}
+#feedbackFormContainer form fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+#feedbackFormContainer form fieldset p label.extralong  {text-align: left; float: left; width:530px; padding-right: 10px;}
+#feedbackFormContainer form fieldset p label.long span	{padding-left: 20px;}
+#feedbackFormContainer form fieldset p label.fldinline  {text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+#feedbackFormContainer form fieldset p input				{width: 357px; color: Navy}
+#feedbackFormContainer form fieldset p select			{width: 250px; }
+#feedbackFormContainer form fieldset p input.small		{width: 125px; }
+#feedbackFormContainer form fieldset p input.med			{width: 200px; }
+#feedbackFormContainer form fieldset p input.btn			{width: 125px; } 
+#feedbackFormContainer form fieldset p input.radiobtn	{width: 25px; } 
+#feedbackFormContainer form fieldset p textarea		   {width: 357px; height: 100px;} 

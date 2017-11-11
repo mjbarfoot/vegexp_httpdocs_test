@@ -1,0 +1,16 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  css shadows called via import (to degrade for NS4)           *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  14/03/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+#navTelNumWrap, #navCheckOutWrap, #navRecipesWrap, #navVeganWrap, #navGlutenFreeWrap, #navOrganicWrap, #navCommentsWrap 
+{position: relative; background: #ADADAD; margin: 4px; width: 190px; height: 28px; margin-top: 0.6em; margin-left: 2px;}	
+#navTelNum, #navMyAccount, #navBasket, #navCheckOut, #navRecipes, #navVegan, #navGlutenFree, #navOrganic, #navComments
+{ position: relative; left: -2px; top: -2px; }
+
+#productListWrapper {width: 717px; background-color: #ADADAD; padding-top: 2px;}
+#productList {position: relative; left: -2px; top: -2px;}

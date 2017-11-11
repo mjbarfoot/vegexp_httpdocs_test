@@ -1,0 +1,1 @@
+<cfthrow type="vegexp.custom.friendly" detail="Oops a friendly exception" message="This is a test exception!">

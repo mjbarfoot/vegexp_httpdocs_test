@@ -1,0 +1,39 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype - Login (based upon Register)                       *
+*  Skin        :  Neutral													          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  24/04/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Registration Form -------------------------------------- */
+/*******************************************************************************/
+
+/* ------------------/ Container /-------------------------------------------- */
+#loginFormContainer {background-color: White; border: 1px solid Black; padding:0.7em; }
+
+
+/* ------------------/ Form /-------------------------------------------- */
+#loginFormContainer form 										{font-size: 0.8em;}
+#loginFormContainer form span.fieldsetTitle				{font-weight: Bold;}
+#loginFormContainer form fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.5em 0em; border-top: 1px solid black; border-bottom: 1px solid #B9B9B9;}
+#loginFormContainer form fieldset p						{margin: 0.6em 0em; clear: left; padding-top: 1em;padding-bottom: 1em;}
+#loginFormContainer form fieldset p label				{text-align: right; float: left; width:125px; padding-right: 20px;}
+#loginFormContainer form fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+#loginFormContainer form fieldset p label.extralong  {text-align: left; float: left; width:530px; padding-right: 10px;}
+#loginFormContainer form fieldset p label.long span	{padding-left: 20px;}
+#loginFormContainer form fieldset p label.fldinline  {text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+#loginFormContainer form fieldset p input				{width: 357px; color: #177730}
+#loginFormContainer form fieldset p input.small		{width: 125px; }
+#loginFormContainer form fieldset p input.med			{width: 200px; }
+#loginFormContainer form fieldset p input.btn			{width: 125px; } 
+#loginFormContainer form fieldset p input.radiobtn	{width: 25px; }
+
+#loginFeedBack {color: Red; font-weight: bold}
+
+/* ------------------/ Links /-------------------------------------------- */
+#loginFormContainer form fieldset p	a {}

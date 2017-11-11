@@ -1,0 +1,39 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  VE - Comment (based upon contact                             *
+*  Skin        :  n/a										   			          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  04/08/2006                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Contact Us Form -------------------------------------- */
+/*******************************************************************************/
+
+/* ------------------/ Container /-------------------------------------------- */
+#commentFormContainer {background-color: White; border: 1px solid Black; padding:0.7em; }
+
+/* ------------------/ Form /-------------------------------------------- */
+#commentFormContainer form 										{font-size: 0.8em;}
+#commentFormContainer form span.fieldsetTitle				{font-weight: Bold;}
+#commentFormContainer form fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.8em 0em; border-top: 1px solid black; border-bottom: 1px solid #B9B9B9;}
+#commentFormContainer form fieldset p						{margin: 0.8em 0em; clear: left}
+#commentFormContainer form fieldset p label				{text-align: right; float: left; width:125px; padding-right: 20px;}
+#commentFormContainer form fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+#commentFormContainer form fieldset p label.extralong  {text-align: left; float: left; width:530px; padding-right: 10px;}
+#commentFormContainer form fieldset p label.long span	{padding-left: 20px;}
+#commentFormContainer form fieldset p label.fldinline  {text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+#commentFormContainer form fieldset p input				{width: 357px; color: #177730}
+#commentFormContainer form fieldset p input.small		{width: 125px; }
+#commentFormContainer form fieldset p input.med			{width: 200px; }
+#commentFormContainer form fieldset p input.btn			{width: 125px; } 
+#commentFormContainer form fieldset p input.radiobtn	{width: 25px; } 
+#commentFormContainer form fieldset p textarea		   {width: 427px; height: 150px;} 
+
+
+/*******************************************************************************/
+/* ------------------/ EOF /-------------------------------------------------- */
+/*******************************************************************************/

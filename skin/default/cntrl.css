@@ -1,0 +1,45 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  control panel layout                                         *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  14/03/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+* {margin: 0; padding: 0; font-family: Arial;}
+
+ img {border: 0;}
+/*******************************************************************************/
+/* ------------------/ header /----------------------------------------------- */
+/*******************************************************************************/
+/*div.stretcher {border:1px solid Blue;}*/
+div#header {border: 1px solid black; margin: 1em; padding: 1em; background-color: #CDEBB9; color: #155C27;}
+div#header h1 {margin-left: 150px; font-size: 1.4em;}
+div#header img {display: block; float: left; margin-top: -0.5em;}
+
+/*******************************************************************************/
+/* ------------------/ navigation /-------------------------------------------- */
+/*******************************************************************************/
+div#container {float: left; background-color: #CDEBB9; width: 200px; font-size: 0.9em; border: 1px solid #177730; margin: 0em 0em 1em 1em; padding: 0em;}
+h3.display {/*border-top: 1px solid gray;*/   margin: 0em;}
+h3.display a {display: block; font-size: 0.8em; padding: 2px; padding-left: 1em; padding-bottom: 6px; border-top: 1px solid #666; text-decoration: none;  color: black;}
+h3.display a.menutop {border-top: none;}
+div.menuitem {padding-left: 1em; padding-bottom: 1em; padding-top: 1em; /*background-color: White;*/}
+div.menuitem ol li {font-size: 0.9em; color: #177730; margin-left: 12px; padding-bottom: 3px; list-style: none;}
+div.menuitem ol li a {color: #155C27; text-decoration: none;}
+div.menuitem ol li a:hover {color: #155C27; text-decoration: underline;}
+
+/*******************************************************************************/
+/* ------------------/ main /------------------------------------------------- */
+/*******************************************************************************/
+div#main {/*border: 1px solid #177730; */ float: left; margin-left: 20px;}
+
+/*******************************************************************************/
+/* ------------------/ breadcrumb /-------------------------------------------- */
+/*******************************************************************************/
+div#breadcrumb {width: 100%; font-weight: bold;  color: #177730; margin-bottom: 1em;}

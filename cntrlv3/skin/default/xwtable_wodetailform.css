@@ -1,0 +1,160 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  xwtable - Work Order Detail Form				                   *
+*  Skin        :  Default													          		 *
+*  Site        :  http://qsaudit.facilitator-mxes.com				          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  29/06/2007                                                  *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+table.qsdefault tr.woDataRow td {margin: 0; padding: 0; border-left:1px solid #A0AEC7; border-right: 1px solid #A0AEC7;}
+
+div#woDetailForm {border: 0; margin: 0; padding: 1em; background-color: #F4F4F4; position: relative; height: 670px;}
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+div#woDetailForm fieldset label {color: #556D9C; font-weight: bold;}
+div#woDetailForm fieldset input {/*background-color: #FFFFFF; border: 1px solid #A0AEC7*/ }
+div#woDetailForm fieldset textarea {background-color: #FFFFFF; border: 1px solid #A0AEC7}
+/*******************************************************************************/
+/* ------------------/ PROPERTAILS SECTION /---------------------------------- */
+/*******************************************************************************/
+div#woDetailForm fieldset#PropDetails {border-bottom: 1px solid #8E9FBE; height: 102px;}
+div#woDetailForm fieldset#PropDetails label#lbl_propref {position: absolute; 			top: 12px; left: 20px;}
+div#woDetailForm fieldset#PropDetails input#propref {position: absolute; 				top: 26px; left: 20px;}
+div#woDetailForm fieldset#PropDetails label#lbl_propname {position: absolute; 		top: 12px; left: 180px; width: 200px;}
+div#woDetailForm fieldset#PropDetails input#propname {position: absolute; 				top: 26px; left: 180px; width: 200px;}
+div#woDetailForm fieldset#PropDetails label#lbl_district {position: absolute; 		top: 54px; left: 20px;}
+div#woDetailForm fieldset#PropDetails input#district {position: absolute; 				top: 68px; left: 20px;}
+div#woDetailForm fieldset#PropDetails label#lbl_description {position: absolute; 	top: 12px; left: 430px;}
+div#woDetailForm fieldset#PropDetails textarea#description {position: absolute; 		top: 26px; left: 430px; width: 500px; height: 70px;}
+
+/*******************************************************************************/
+/* ------------------/ PROPDATES /-------------------------------------------- */
+/*******************************************************************************/
+div#woDetailForm fieldset#PropDates {border-bottom: 1px solid #8E9FBE; height: 60px;}
+div#woDetailForm fieldset#PropDates label#lbl_date_requested {position: absolute; 	top: 124px; left: 20px;}
+div#woDetailForm fieldset#PropDates input#date_requested {position: absolute;			top: 138px; left: 20px;}
+div#woDetailForm fieldset#PropDates label#lbl_date_phycomp {position: absolute; 		top: 124px; left: 160px;}
+div#woDetailForm fieldset#PropDates input#date_phycomp {position: absolute; 			top: 138px; left: 160px;}
+div#woDetailForm fieldset#PropDates label#lbl_date_fincomp {position: absolute; 		top: 124px; left: 300px;}
+div#woDetailForm fieldset#PropDates input#date_fincomp {position: absolute; 			top: 138px; left: 300px;}
+div#woDetailForm fieldset#PropDates label#lbl_opuscode {position: absolute; 			top: 124px; left: 680px;}
+div#woDetailForm fieldset#PropDates input#opuscode {position: absolute; 				top: 138px; left: 680px;}
+div#woDetailForm fieldset#PropDates label#lbl_tenure {position: absolute; 				top: 124px; left: 820px;}
+div#woDetailForm fieldset#PropDates input#tenure {position: absolute; 					top: 138px; left: 820px;}
+
+
+/*******************************************************************************/
+/* ------------------/ PropMIS /-------------------------------------------- */
+/*******************************************************************************/
+div#woDetailForm fieldset#PropMIS {border-bottom: 1px solid #8E9FBE; height: 60px;}
+div#woDetailForm fieldset#PropMIS label#lbl_propmis1 {position: absolute;   top: 182px; left: 20px;}
+div#woDetailForm fieldset#PropMIS input#propmis1 {position: absolute;       top: 200px; left: 20px;}
+div#woDetailForm fieldset#PropMIS label#lbl_propmis2 {position: absolute;   top: 182px; left: 160px;}
+div#woDetailForm fieldset#PropMIS input#propmis2 {position: absolute; 		 top: 200px; left: 160px;}
+div#woDetailForm fieldset#PropMIS label#lbl_costcentre {position: absolute; top: 182px; left: 370px;}
+div#woDetailForm fieldset#PropMIS input#costcentre {position: absolute; 	 top: 200px; left: 370px;}
+div#woDetailForm fieldset#PropMIS label#lbl_costcentre2 {position: absolute;top: 182px; left: 510px; color: black; font-weight: normal; }
+div#woDetailForm fieldset#PropMIS input#costcentre2 {position: absolute; 	 top: 200px; left: 510px;}
+div#woDetailForm fieldset#PropMIS label#lbl_pcmcode {position: absolute;    top: 182px; left: 735px; color: black; font-weight: normal; width: 50px;}
+div#woDetailForm fieldset#PropMIS input#pcmcode {position: absolute;        top: 200px; left: 735px; width: 50px;}
+div#woDetailForm fieldset#PropMIS label#lbl_criticality {position: absolute;top: 182px; left: 820px;}
+div#woDetailForm fieldset#PropMIS input#criticality {position: absolute;    top: 200px; left: 820px;}
+
+/*******************************************************************************/
+/* ------------------/ AccAudit /-------------------------------------------- */
+/*******************************************************************************/
+div#woDetailForm fieldset#AccAudit label#lbl_srfobtained {position: absolute;  			top: 246px; left: 20px;}
+div#woDetailForm fieldset#AccAudit input#srfobtained {position: absolute; 	   			top: 274px; left: 20px; width:40px;}
+div#woDetailForm fieldset#AccAudit label#lbl_jobpack {position: absolute;  				top: 246px; left: 80px;}
+div#woDetailForm fieldset#AccAudit input#jobpack	 {position: absolute; 	   			top: 274px; left: 80px; width:40px;}
+div#woDetailForm fieldset#AccAudit {border-bottom: 1px solid #8E9FBE; height: 75px;}
+div#woDetailForm fieldset#AccAudit label#lbl_accountaudited {position: absolute;   		top: 246px; left: 140px; width:60px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccAudit input#accountaudited {position: absolute;       		top: 274px; left: 140px; }
+
+div#woDetailForm fieldset#AccAudit label#lbl_amountapproved {position: absolute; 		top: 256px; left: 230px;}
+div#woDetailForm fieldset#AccAudit input#amountapproved {position: absolute; 	   		top: 274px; left: 230px;}
+div#woDetailForm fieldset#AccAudit label#lbl_approvedby {position: absolute;     		top: 256px; left: 370px;}
+div#woDetailForm fieldset#AccAudit input#approvedby {position: absolute;         		top: 274px; left: 370px;}
+div#woDetailForm fieldset#AccAudit label#lbl_approveddate {position: absolute; 			top: 256px; left: 510px;}
+div#woDetailForm fieldset#AccAudit input#approveddate {position: absolute; 	   		top: 274px; left: 510px;}
+
+div#woDetailForm fieldset#AccAudit label#lbl_compthreshdeduc {position: absolute; 		top: 246px; left: 680px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccAudit input#compthreshdeduc {position: absolute;     		top: 274px; left: 680px; width:40px;}
+div#woDetailForm fieldset#AccAudit label#lbl_mannedsite {position: absolute; 				top: 246px; left: 760px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccAudit input#mannedsite {position: absolute;     				top: 274px; left: 760px;}
+div#woDetailForm fieldset#AccAudit label#lbl_linkedjob {position: absolute; 				top: 256px; left: 820px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccAudit input#linkedjob {position: absolute;     				top: 274px; left: 820px;}
+
+/*******************************************************************************/
+/* ------------------/ AccStatus /-------------------------------------------- */
+/*******************************************************************************/
+div#woDetailForm fieldset#AccStatus {border-bottom: 1px solid #8E9FBE; height: 100px;}
+div#woDetailForm fieldset#AccStatus label#lbl_accountstatus {position: absolute; 		top: 322px; left: 20px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccStatus input#accountstatus {position: absolute;     		top: 340px; left: 20px; }
+div#woDetailForm fieldset#AccStatus label#lbl_taxalloc {position: absolute; 				top: 322px; left: 180px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccStatus input#taxalloc {position: absolute;     				top: 340px; left: 180px;}
+div#woDetailForm fieldset#AccStatus label#lbl_keyworddescofwork {position: absolute; 	top: 322px; left: 370px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#AccStatus textarea#keyworddescofwork {position: absolute; 	top: 340px; left: 370px; width: 575px; height: 60px;}
+
+/*******************************************************************************/
+/* ------------------/ PaymentClass /------------------------------------------ */
+/*******************************************************************************/
+div#woDetailForm fieldset#PaymentClass {border-bottom: 1px solid #8E9FBE; height: 80px;}
+div#woDetailForm fieldset#PaymentClass label#lbl_paymentclassif {position: absolute; 		top: 428px; left: 20px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#PaymentClass input#paymentclassif {position: absolute;     		top: 458px; left: 20px; }
+div#woDetailForm fieldset#PaymentClass label#lbl_ibuyitemcode {position: absolute; 			top: 428px; left: 160px; color: black; font-weight: normal; width: 60px;}
+div#woDetailForm fieldset#PaymentClass input#ibuyitemcode {position: absolute;     			top: 458px; left: 160px; width: 60px;}
+div#woDetailForm fieldset#PaymentClass label#lbl_commodcode {position: absolute; 			top: 428px; left: 300px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#PaymentClass input#commodcode  {position: absolute; 				top: 458px; left: 300px; width: 75px;}
+div#woDetailForm fieldset#PaymentClass label#lbl_commoddesc {position: absolute; 			top: 428px; left: 400px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#PaymentClass input#commoddesc  {position: absolute; 				top: 458px; left: 400px; width: 200px;}
+div#woDetailForm fieldset#PaymentClass label#lbl_legalentity {position: absolute; 			top: 428px; left: 660px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#PaymentClass input#legalentity  {position: absolute; 				top: 458px; left: 660px; width: 75px;}
+div#woDetailForm fieldset#PaymentClass input#btnviewjournals  {position: absolute; 			top: 458px; left: 770px; width: 180px;}
+
+/*******************************************************************************/
+/* ------------------/ AmountClaimed /------------------------------------------ */
+/*******************************************************************************/
+div#woDetailForm fieldset#AmountClaimed {border-bottom: 1px solid #8E9FBE; height: 80px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_amtclaimedlab {position: absolute; 		top: 510px; left: 20px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#amtclaimedlab {position: absolute;     		top: 540px; left: 20px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_amtclaimedmeasure {position: absolute; 	top: 510px; left: 120px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#amtclaimedmeasure {position: absolute;     	top: 540px; left: 120px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_amtclaimedmaterials {position: absolute;top: 510px; left: 220px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#amtclaimedmaterials  {position: absolute; 	top: 540px; left: 220px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_amtclaimedother {position: absolute; 	top: 510px; left: 320px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#amtclaimedother  {position: absolute; 		top: 540px; left: 320px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_amclaimedtotal {position: absolute; 		top: 510px; left: 420px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#amclaimedtotal  {position: absolute; 			top: 540px; left: 420px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_valreceived {position: absolute; 			top: 510px; left: 660px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#valreceived  {position: absolute; 				top: 540px; left: 660px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_agreedfinalaccount {position: absolute; top: 510px; left: 760px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#agreedfinalaccount  {position: absolute; 	top: 540px; left: 760px; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed label#lbl_auditdiff {position: absolute; 			top: 510px; left: 860px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#AmountClaimed input#auditdiff  {position: absolute; 				top: 540px; left: 860px; width: 75px;}
+
+/*******************************************************************************/
+/* ------------------/ Payables /------------------------------------------ */
+/*******************************************************************************/
+div#woDetailForm fieldset#Payables {border-bottom: 1px solid #8E9FBE; height: 80px;}
+div#woDetailForm fieldset#Payables label#lbl_grosspayable {position: absolute; 		top: 590px; left: 20px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#Payables input#grosspayable {position: absolute;     		top: 620px; left: 20px; width: 75px;}
+div#woDetailForm fieldset#Payables label#lbl_auditpctdeduc {position: absolute; 		top: 590px; left: 120px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#Payables input#auditpctdeduc {position: absolute;     		top: 620px; left: 120px; width: 75px;}
+div#woDetailForm fieldset#Payables label#lbl_netpayable {position: absolute;			top: 600px; left: 220px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#Payables input#netpayable  {position: absolute; 				top: 620px; left: 220px; width: 75px;}
+div#woDetailForm fieldset#Payables label#lbl_profit {position: absolute; 				top: 600px; left: 320px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#Payables input#profit  {position: absolute; 					top: 620px; left: 320px; width: 75px;}
+div#woDetailForm fieldset#Payables label#lbl_kpiprofitabatement {position: absolute;top: 590px; left: 420px; color: black; font-weight: normal; width: 75px;}
+div#woDetailForm fieldset#Payables input#kpiprofitabatement  {position: absolute; 	top: 620px; left: 420px; width: 75px;}
+div#woDetailForm fieldset#Payables label#lbl_totaldue {position: absolute; 			top: 590px; left: 520px; color: black; font-weight: normal; font-weight: bold; width: 75px;}
+div#woDetailForm fieldset#Payables input#totaldue  {position: absolute; 				top: 620px; left: 520px; width: 75px;}
+div#woDetailForm fieldset#Payables label#lbl_valnumber {position: absolute; 			top: 590px; left: 680px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#Payables input#valnumber  {position: absolute; 				top: 620px; left: 680px; }
+div#woDetailForm fieldset#Payables label#lbl_certnum {position: absolute; 				top: 590px; left: 820px; color: black; font-weight: normal;}
+div#woDetailForm fieldset#Payables input#certnum  {position: absolute; 					top: 620px; left: 820px; }

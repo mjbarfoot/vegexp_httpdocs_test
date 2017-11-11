@@ -1,0 +1,44 @@
+<taconite-root xml:space="preserve">
+            <taconite-replace contextNodeID="myBasketWrap" parseInBrowser="true">
+
+	<div id="myBasketWrap">
+
+
+		<table id="myBasket">
+		<tbody>
+		<tr class="firstrow"><td colSpan="3">Showing Last 5 added</td></tr>
+		<tr>
+<td style="width:17px">(1)</td><td style="width:129px">Suet, Vegetable</td><td style="width:31px"/>
+		</tr>
+		<tr>
+<td style="width:17px">(1)</td><td style="width:129px">Cake Mix, Chocolate </td><td style="width:31px"/>
+		</tr>
+		<tr>
+<td style="width:17px">(1)</td><td style="width:129px">Jamaican Ackees (Can</td><td style="width:31px"/>
+		</tr>
+		<tr>
+<td style="width:17px">(1)</td><td style="width:129px">Agar Agar Flakes 'Sa</td><td style="width:31px"/>
+		</tr>
+		<tr class="lastAdded">
+<td style="width:17px">(1)</td><td style="width:129px">Vanilla Extract (ORG</td><td style="width:31px"/>
+		</tr>
+
+		<tr id="tblBasketEdit">
+			<td colSpan="3"><a href="basket.cfm" id="tblBasketEditLink">Edit Items or View All <img alt="Edit my shopping basket" src="/skin/default/nav_basket_edit.gif"/></a></td>
+		</tr>
+<tr id="tblBasketExpand">
+<td colSpan="3">
+</td>
+</tr>
+		</tbody>
+		</table>
+
+	</div>
+
+	</taconite-replace>
+        <taconite-replace  contextNodeID="baskettotal" parseInBrowser="true">
+            <div id="baskettotal">
+                TOTAL: <span id="grandTotal"></span>
+            </div>
+        </taconite-replace>
+    </taconite-root>

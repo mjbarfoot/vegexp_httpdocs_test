@@ -1,0 +1,248 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype layout                                             *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  14/03/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+* {list-style: none;	margin: 0; padding: 0; font-family: Arial, Sans-Serif; font-size: 1em;}
+
+img {border: 0;}
+fieldset {border: 0;}
+
+/*******************************************************************************/
+/* ------------------/ Wrappers /--------------------------------------------- */
+/*******************************************************************************/
+#wrapper {width: 989px;	margin-top:0.5em; margin-left: auto;margin-right: auto;}
+
+/*******************************************************************************/
+/* ------------------/ Header: Top (Logo, searchbar and infobar /------------- */
+/*******************************************************************************/
+#head {/*background: url(/pix/foot_bg.jpg) repeat-x 0px 145px;*/}
+#head_top {position: relative;  height:200px; margin-left: 30px; font-size: 1em;}
+#head_top #logo_wrapper {display: block; width: 156px; float: left; margin-left: 0px; padding-top: 20px;}
+#head_top #logo_wrapper_orderportal {display: block; width: 334px; float: left; margin-left: 0px; padding-top: 20px;}
+#head_top #vegexp_logo {}
+#head_top #searchbar {/*border: 1px dotted #ccc;*/ font-size: 1.1em; display: block; width: 330px;
+							float: left; margin-left: 400px; margin-top: 20px; height: 60px;}
+
+#head_top #searchbar #fldsearchshadow {background-color: #ADADAD; position: relative; top: 2px;}
+#head_top #searchbar #fldsearchshadow #pQ {border: 1px solid black; font-size: 1em;
+											position: relative; top:-3px; left:-2px; padding-left: 0.2em;
+											padding-right: 0.2em; color: #33A327}
+#head_top #searchbar #frmsubmit {background-color: White; cursor: pointer; border: none; margin-left: 2px;
+											background: url(/skin/default/arrow_right.gif) no-repeat 28px 0px;
+										   padding:0 15px 0px 0px; height: 24px; width: 40px;}
+
+#head_top #searchbar #advsearchfs {margin-top:8px;}
+#head_top #searchbar  #advsearch {padding-left: 156px;  padding-top: 0px; padding-right: 15px; text-decoration: none; color: Black;
+										   background: url(/skin/default/arrow_right.gif) no-repeat right;}
+
+#head_top #infobar {position: relative;/* border: 1px dotted #ccc; */ height: 20px;	font-size: 1.1em; display: block; width: 300px;
+							float: left; margin-left: 450px; margin-top: 6px;}
+
+/* ------ Filter Display ------------- */
+#head_top #infobar #info-filter-text {position: absolute; left: 17px; top: 4px;}
+#head_top #infobar #info-filter-wrap		 {display: block; background-color: #ADADAD; position: relative; margin-left: 68px; width: 130px; margin-top: 3px;}
+#head_top #infobar #info-filter-Organic 	 {float: left;position: relative; top: -1px; left: -3px; display: block; width: 130px; height: 20px; text-indent: 30px; padding-top: 2px; padding-bottom: 2px; border: 1px solid black; background: url(/skin/default/nav_organic.gif) no-repeat 0 -2px;;}
+#head_top #infobar #info-filter-Vegan 		 {float: left; position: relative; top: -1px; left: -3px; display: block; width: 130px; height: 20px; text-indent: 30px; padding-top: 2px; padding-bottom: 2px; border: 1px solid black; background: url(/skin/default/nav_vegan.gif) no-repeat 0 -2px;}
+#head_top #infobar #info-filter-GlutenFree {float: left; position: relative; top: -1px; left: -3px; display: block; width: 130px; height: 20px; text-indent: 30px; padding-top: 2px; padding-bottom: 2px; border: 1px solid black; background: url(/skin/default/nav_glutenfree.gif) no-repeat 0 -2px;}
+
+
+/* ------ Delivery Day ------------- */
+#head_top #infobar #delDay {float: left; padding-left: 22px; font-size: 0.9em;}
+#head_top #infobar #delDayNoLeftPad {padding-left: 0px;}
+#head_top #infobar #delDayNoLeftPad #delDayValue, #head_top #infobar #delDay #delDayValue {width: 46px; padding: 0 0.2em; margin-left: 0.4em; background-color: #33A327; color: White; border: none; cursor: default; font-size: 0.9em; }
+
+/* ------ MOV ------------- */
+#head_top #infobar #mov {padding-left: 32px; font-size: 0.9em;}
+#head_top #infobar #mov #movValue {width: 46px; padding: 0 0.2em; margin-left: 0.4em; background-color: #33A327; color: White; border: none; cursor: default;  }
+
+
+/*******************************************************************************/
+/* ------------------/ Header: Tabs /----------------------------------------- */
+/*******************************************************************************/
+
+#head_tabs {position: relative; height: 47px; width: 965px; margin-left: 30px;}
+#head_tabs ol li {display: block; list-style-type: none; margin-bottom: -30px;}
+
+#head_tabs ol li.tabamb   {position: absolute; left: 0px}
+#head_tabs ol li.tabfrz   {position: absolute; left: 145px}
+#head_tabs ol li.tabchl   {position: absolute; left: 290px}
+#head_tabs ol li.tabfav   {position: absolute; left: 435px}
+/*#head_tabs ol li.tabspc   {position: absolute; left: 580px}*/
+#head_tabs ol li.tabhome  {position: absolute; left: 737px}
+
+#head_tabs ol li a {color: black; font-weight: bold;	text-decoration: none; display: block;
+background: url(/skin/default/tab_bg.gif) no-repeat; width: 141px; height: 47px; margin-left:0; padding-top: 20px; text-align: center;}
+#head_tabs ol li a:hover {background: url(/skin/default/tab_bg_ro.gif) no-repeat;}
+
+#head_tabs ol li.tabhome a {color: black; font-weight: bold;	text-decoration: none; display: block;
+background: url(/skin/default/tab_home_bg.gif) no-repeat; width: 196px; height: 47px; margin-left:0px; padding-left: 10px; padding-top: 20px; text-align: center;}
+#head_tabs ol li.tabhome a:hover {background: url(/skin/default/tab_home_bg_ro.gif) no-repeat;}
+
+
+/*******************************************************************************/
+/* ------------------/ Top Margin /----------------------------------------- */
+/*******************************************************************************/
+#body_topborder {height:10px; font-size:0em; background: url(/pix/foot_bg.jpg) repeat-x; /*line-height:0;*/ margin:0; padding:0; width: 100%;}
+
+/*******************************************************************************/
+/* ------------------/ Body Wrapper /----------------------------------------- */
+/*******************************************************************************/
+/* #body {background: url(/pix/page_bg.jpg) no-repeat bottom right; margin-top:0;} */
+#body { margin-top:0;}
+
+/*******************************************************************************/
+/* ------------------/ Navigation (RHS) Div /--------------------------------- */
+/*******************************************************************************/
+#nav {float: right; width: 222px; padding: 0;  /*border: 1px dotted black;*/ }
+
+/* http://www.positioniseverything.net/easyclearing.html created by Tony Aslett,
+creator and operator of csscreator.com
+Notes: Fails on IE5 for MAC */
+.clearfix:after {content: "."; display: block; height: 0; clear: both;  visibility: hidden; height: 1%;}
+.clearfix {display:inline-block;}
+ /* Holly Hack Targets IE Win only \*/
+     * html .clearfix {height: 1%;}
+      .clearfix {display: block;}
+ /* End Holly Hack */
+
+
+/* Shadowed box effect courtesy of Craig Saila http://www.saila.com/usage/shadow/#box */
+.navbox {width: 190px; height: 28px;}
+#mainWSLink, #navTelNum, #navMyAccount, #navCheckOut, #navRecipes, #navVegan, #navGlutenFree, #navOrganic, #navComments
+{margin-left: 2px; border: 1px solid black; background: White; }
+
+/* Links */
+#nav a {font-size: 1.1em; color: Black; text-align: left; display:block; text-decoration:none;
+	width: 160px; height: 24px; background-color: White; padding-left: 40px; padding-top: 4px;}
+#nav a:hover {background-color:#E7F3DE; color: #177730}
+
+/* ------------------/ Navigation MainSiteLink /--------------------------------- */
+#nav #mainWSLinkWrap .navbox {width: 190px; height: 26px; margin-left: 0px;}
+#nav #mainWSLinkWrap		{position: relative; background: #ADADAD; margin: 4px; width: 190px; height:28px; margin-top: 0.6em; margin-bottom: 0.8em; margin-left: 2px;}
+/*#nav #mainWSLink  {font-size: 0.8em; color: #177730; padding-left: 3px; padding-bottom: 4px;}*/
+#nav #mainWSLink a {color: #177730; font-size: 0.8em; background: none; display: inline; text-decoration: underline; padding: 0; margin-left: 6px;}
+
+
+/* ------------------/ Navigation My Account /--------------------------------- */
+#nav #navMyAccountWrap		{position: relative; background: #ADADAD; margin: 4px; width: 190px; margin-top: 0.6em; margin-left: 2px;}
+#nav #navMyAccount			{width: 190px;}
+#nav #navMyAccount a 		{background: url(/skin/default/nav_myAcc.gif) no-repeat;}
+#nav #navMyAccount a:hover {background-position: 0 -28px;}
+#nav #navMyAccount #navMyAccountLogin {font-size: 0.8em; color: #177730; padding-left: 3px; padding-bottom: 4px;}
+#nav #navMyAccount #navMyAccountLogin a {color: #177730; font-size: 0.9em; background: none; display: inline; text-decoration: underline; padding: 0em 3px;}
+#nav #navMyAccount #navMyAccountLogin #myAccountLinks {margin-top: 3px; display: block;}
+#nav #navMyAccount #navMyAccountLogin #myAccountLinks a {color: Black; font-size: 0.9em; background: none; display: inline; text-decoration: underline; padding: 0em 3px;}
+
+/* ------------------/ Navigation Info /--------------------------------- */
+#nav #navTelNum span 		{background: url(/skin/default/nav_telnum.gif) no-repeat; font-size: 1.1em; color: #177730; text-align: left; display:block; text-decoration:none;
+	width: 160px; height: 24px; background-color: White; padding-left: 30px; padding-top: 4px;}
+
+/* ------------------/ Navigation Other links /--------------------------------- */
+#nav #navCheckOut a 			{background: url(/skin/default/nav_checkout.gif) no-repeat;}
+#nav #navCheckOut a:hover 	{background-position: 0 -28px;}
+#nav #navRecipes a 			{background: url(/skin/default/nav_recipes.gif) no-repeat;}
+#nav #navRecipes a:hover 	{background-position: 0 -28px;}
+#nav #navVegan a 				{background: url(/skin/default/nav_vegan.gif) no-repeat;}
+#nav #navVegan a:hover 		{background-position: 0 -28px;}
+#nav #navGlutenFree a 		{background: url(/skin/default/nav_glutenfree.gif) no-repeat;}
+#nav #navGlutenFree a:hover{background-position: 0 -28px;}
+#nav #navOrganic a 			{background: url(/skin/default/nav_organic.gif) no-repeat;}
+#nav #navOrganic a:hover 	{background-position: 0 -28px;}
+#nav #navComments a 			{background: url(/skin/default/nav_comments.gif) no-repeat;}
+#nav #navComments a:hover 	{background-position: 0 -28px;}
+
+/*******************************************************************************/
+/* ------------------/ Content  /--------------------------------------------- */
+/*******************************************************************************/
+#content {margin-left: 30px; width: 730px; /* height: 300px;  border: 1px dotted black; */}
+
+/* product_list */
+#productListWrapper {margin-left: 33px;}
+#productList {width: 697px;  background-color:#CDEBB9; border-left: 1px solid #626262; border-right: 1px solid #626262; border-bottom: 1px solid #626262;
+				  padding-top: 0.4em; padding-left: 10px; padding-right: 10px; padding-bottom: 0.4em;}
+
+/*******************************************************************************/
+/* ------------------/ Tip  /--------------------------------------------- */
+/*******************************************************************************/
+span.shopperTip {font-size: 0.8em; margin-top: 1em; padding: 0.7em 1em;  font-weight: normal; display: block; border:1px solid #9AD776; background-color:  #E8F6E0}
+
+
+/*******************************************************************************/
+/* ------------------/ ShopFilter Display Sort by   /-------------------------- */
+/*******************************************************************************/
+div#shopFilterDisplayBar div#shopFilterSortBy {margin-top: 1em; margin-bottom: 0em; font-weight: normal;}
+div#shopFilterDisplayBar div#shopFilterSortBy a#sortHelp {text-decoration: none; color: black; font-weight: normal;}
+div#shopFilterDisplayBar div#shopFilterSortBy a#sortHelp:hover {text-decoration: underline; color: black; font-weight: normal;}
+
+/* ------------------/ Slide Down Help  /-------------------------- */
+div.helpHintWrapper {border:1px solid #177730;	height:0px;	visibility:hidden;	position:absolute;	background-color:#E8F6E0;
+									 overflow:hidden; padding:2px; width:350px;}
+div.helpHintcontent {position:relative; font-family: Arial, sans-serif;	width:100%; font-size:1em;}
+div.helpHintcontent span.activeColumn {color: #177730; font-weight: bold;}
+div.helpHintcontent span.unactiveColumn {color: black; font-weight: bold;}
+
+div.helpHintcontent a#closeHelp {position: absolute; bottom: 3px; right: 3px; color: #177730}
+/*******************************************************************************/
+/* ------------------/ Content: Homepage - Tab Pictures /--------------------- */
+/*******************************************************************************/
+#content #a-tabpic-ambient		 {display: block; float: left; margin-left: 1px; margin-bottom: 0.6em;}
+#content #a-tabpic-frozen 		 {display: block; float: left; margin-left: 5px; margin-bottom: 0.6em;}
+#content #a-tabpic-chilled 	 {display: block; float: left; margin-left: 6px; margin-bottom: 0.6em;}
+#content #a-tabpic-favourites	 {display: block; float: left; margin-left: 6px; margin-bottom: 0.6em; }
+/*#content #a-tabpic-offers 		 {display: block; float: left; margin-left: 5px; margin-bottom: 0.6em;}*/
+
+
+/*******************************************************************************/
+/* ------------------/ Content: Homepage - Welcome to Veg Express  /---------- */
+/*******************************************************************************/
+#content #welcome-msg-wrapper 	{width: 500px;}
+#content #welcome-msg-span 		{font-size: 1.5em;color: #716F6E; }
+#content #welcome-msg-span-green {color: #008030; font-weight: 600;}
+#content #welcome-msg-span-ec, #content #welcome-msg-span-nc {color: #177730;}
+#content #welcome-msg-wrapper p 	{font-size: 1.1em; color: black; letter-spacing: 0px; margin-top: 0.6em; margin-bottom: 0.6em; }
+#content #welcome-msg-wrapper p a {color: Black}
+#content #welcome-msg-wrapper p a:hover {color: #177730;}
+
+/********************************************************************************/
+/* ------------------/ Hotline /----------------------------------------------- */
+/********************************************************************************/
+#ordhot_wrapper {margin-left: 30px; margin-top: 1.4em; margin-bottom: 0.6em; width: 440px; /* border: 1px dotted black; */}
+#ordhot_wrapper #hotline {background-color: #CCEBC1; font-size: 1.6em; width: 410px; padding: 0.3em 0.6em; display: block;}
+#ordhot_wrapper #hotline #hot_telnum {color: #177730; font-size: 1em; background-color: transparent; display: inline;}
+#ordhot_wrapper #nextday {color: Black; font-size: 1.1em; background-color: transparent; display: inline; margin-top:1em; line-height: 3em; margin-bottom: 1em;}
+
+
+
+
+/*******************************************************************************/
+/* ------------------/ Footer /----------------------------------------------- */
+/*******************************************************************************/
+#foot {position: relative; height: 43px; background-color: #84bd00;
+border-left: 1px solid #C0EAC2; border-right: 1px solid #C0EAC2; border-top: 1px solid #50C557;
+font-size: 1.4em; color: White; line-height: 1.6em;}
+
+/* Footer: links -----------------------------------------------------------*/
+#foot a {font-size: 0.6em; color: White; text-decoration: none; padding:0 1em;}
+#foot a:hover {text-decoration: underline;}
+#copyR {position: absolute;  right: 1em; top: 0.4em; color: #C0EAC2; font-size: 0.5em;}
+
+/*******************************************************************************/
+/* ------------------/ Paragraphs /---------------------------------------- */
+/*******************************************************************************/
+
+
+
+
+
+/*******************************************************************************/
+/* ------------------/ Shadowed Boxes /-------------------------------------- */
+/*******************************************************************************/

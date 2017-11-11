@@ -1,0 +1,71 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  admin - admin layout for qsaudit 			                   *
+*  Skin        :  Default													          		 *
+*  Site        :  http://qsaudit.facilitator-mxes.com				          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  25/07/2007                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+div#qsa_admin {font-size: 0.8em; position: relative;}
+
+div#qsa_admin div {padding-bottom: 3em; padding-top: 1em;}
+div#qsa_admin div h1 {font-size: 2em; color: #002469; padding-bottom: 8px;}
+
+/*******************************************************************************/
+/* ------------------/ Table: QSADMIN /-------------------------------------- */
+/*******************************************************************************/
+div#qsa_admin table.qsadmin {border-bottom:1px solid #000173; border-top:2px solid #002469;border-collapse:collapse;}
+div#qsa_admin table.qsadmin td, div#qsa_admin table.qsadmin th  {padding: 6px 4px; border-bottom: 1px solid #A8A9FF; }
+div#qsa_admin form input, div#qsa_admin form select  {font-size: 0.9em; width: 115px;}
+div#qsa_admin form select {width: 110px;}
+div#qsa_admin form input.button {width: 50px;}
+
+/*******************************************************************************/
+/* ------------------/ Form: UserStats /-------------------------------------- */
+/*******************************************************************************/
+div#qsa_admin div#qsa_stats_statsbyUser {}
+div#qsa_admin div#qsa_stats_statsbyUser h1 {margin:0 0 6px;padding:0;}
+div#qsa_admin div#qsa_stats_statsbyUser div {margin: 0px 0px 24px; padding: 0px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats {margin-bottom: 6px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats fieldset {position: relative;}
+
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats select#userid {width: 125px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats select#fldevent {width: 175px; margin-left: 10px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats select#year {width: 80px; margin-left: 10px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats select#month {width: 80px; margin-left: 10px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats select#day {width: 80px; margin-left: 10px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats input {width: 80px; margin-left: 10px;}
+
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats label {color: #002469; font-weight: bold;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats label#lbluserid {position: absolute; top:-18px; left: 0;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats label#lblevent {position: absolute; top:-18px; left: 140px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats label#lblyear {position: absolute; top:-18px; left: 328px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats label#lblmonth {position: absolute; top:-18px; left: 422px;}
+div#qsa_admin div#qsa_stats_statsbyUser form#frmUserStats label#lblday {position: absolute; top:-18px; left: 518px;}
+
+div#qsa_admin div#qsa_stats_statsbyUser table th#userid {width: 125px;}
+div#qsa_admin div#qsa_stats_statsbyUser table th#event {width: 175px;}
+div#qsa_admin div#qsa_stats_statsbyUser table th#records {width: 80px;}
+div#qsa_admin div#qsa_stats_statsbyUser table th#notes {width: 300px;}
+div#qsa_admin div#qsa_stats_statsbyUser table th#date {width: 80px;}
+
+
+/*******************************************************************************/
+/* ------------------/ SupplierAuthWrapper /----------------------------------- */
+/*******************************************************************************/
+div#qsa_admin div#supplierAuthWrapper {position: relative; height: 350px;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles span {display: block; background-color: #002469; color: white; width: 250px; padding: 3px; margin-bottom: 6px;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles div#top {position: absolute; top: 10px; left:0px; /*border: 1px dotted #ccc;*/ width: 100%; padding: 1em; margin: 1em;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles div#lhs {position: absolute; top: 80px; left:0px; /*border: 1px dotted #ccc;*/ width: 250px;  padding: 1em; margin: 1em;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles div#mid {position: absolute; top: 110px; left:315px; /*border: 1px dotted #ccc;*/ margin: 0.2em; margin-top: 1em;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles div#rhs {position: absolute; top: 80px; left:360px; /*border: 1px dotted #ccc;*/ width: 250px; padding: 1em; margin: 1em;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles div#footer {position: absolute; top: 290px; left:520px; /*border: 1px dotted #ccc;*/ width: 250px; padding: 1em; margin: 1em;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles select {width: 250px;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles p {padding-bottom: 3px;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles input {width: 2em;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles input.disabled {border: 1px solid #ccc; color: #ccc;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles input.enabled  {border: 1px solid Black; color: Black;}
+div#qsa_admin div#supplierAuthWrapper form#frmSecRoles input.frmSubmit {width: 100px; font-size: 1.2em;}

@@ -1,0 +1,44 @@
+
+
+
+
+/*******************************************************************************/
+/* ------------------/ Header: Tabs /----------------------------------------- */
+/*******************************************************************************/
+
+/*
+#head_tabs {height: 47px;}
+
+#head_tabs ol {margin-left: 30px; margin-bottom:0;}
+#head_tabs ol li {display: block; float: left; list-style-type: none; margin-bottom: -30px;}
+*/
+/* tab images and links */
+
+/*
+#head_tabs ol li a {color: black; font-weight: bold;	text-decoration: none; display: block; 
+background: url(/skin/default/tab_bg.gif) no-repeat; width: 141px; height: 47px; margin-left:0; }
+#head_tabs ol li a:hover {background: url(/skin/default/tab_bg_ro.gif) no-repeat;}
+
+#head_tabs ol li.tabselected a, #head_tabs ol li.tabselected a, #head_tabs ol li.tabselected a,
+#head_tabs ol li.tabselected a, #head_tabs ol li.tabselected a, #head_tabs ol li.tabselected a
+{background: url(/skin/default/tab_bg_ro.gif) no-repeat;}
+
+#head_tabs ol li.tabhome a {color: black; font-weight: bold;	text-decoration: none; display: block; 
+background: url(/skin/default/tab_home_bg.gif) no-repeat; width: 196px; height: 47px; margin-left:0; }
+#head_tabs ol li.tabhome a:hover {background: url(/skin/default/tab_home_bg_ro.gif) no-repeat;}
+
+#head_tabs ol li.tabfav   {margin-left: 0px}
+#head_tabs ol li.tabamb   {margin-left: 4px}
+#head_tabs ol li.tabfrz   {margin-left: 4px}
+#head_tabs ol li.tabchl   {margin-left: 4px}
+#head_tabs ol li.tabspc   {margin-left: 4px}
+#head_tabs ol li.tabhome  {margin-left: 17px}
+
+#head_tabs ol li.tabfav a  {padding-top: 15px; text-align: center;}
+#head_tabs ol li.tabamb a  {padding-top: 15px; text-align: center;}
+#head_tabs ol li.tabfrz a  {padding-top: 15px; text-align: center;}
+#head_tabs ol li.tabchl a  {padding-top: 15px; text-align: center;}
+#head_tabs ol li.tabspc a  {padding-top: 15px; text-align: center;}
+#head_tabs ol li.tabhome a {padding-top: 15px; text-align: center;}
+
+*/

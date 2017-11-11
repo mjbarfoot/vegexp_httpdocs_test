@@ -1,0 +1,287 @@
+/*******************************************************************************/
+/* ------------------/ INIT FUNCTION /------------------------------------ */
+/*******************************************************************************/ 
+init = function() {
+     // add the drop down menu
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+	// set the base request URL
+	AppVars.reqURL = UTIL.URLgetScriptName(location.href);
+		
+	// Initialise active links
+	ALINK.init();
+	
+	//load xwtable class
+	xw.init();
+}
+
+AppVars =  {
+	reqURL: ''
+}
+
+
+
+/*******************************************************************************/
+/* ------------------/ ACTIVE LINKS /------------------------------------------ */
+/*******************************************************************************/
+ALINK = {
+	init: function() {
+		// *** ASSIGN LINK HANDLERS
+		//find all the active links inside "content" div and 
+		//assign them a taconite onclick listener to forward clicks
+		var myContentLinks = document.getElementById("content").getElementsByTagName("a");	
+		
+		//iterate over them and assign them
+		for (var i=0; i<myContentLinks.length; i++) {
+			// any links that contain reqtype can be automatically forwarded by Taconite.
+			if (myContentLinks[i].href.indexOf("reqtype=")!=-1) {
+			eV.addEvent(myContentLinks[i], 'click', ALINK.forward, false);
+			}
+		}
+		// *** END		
+		
+	}, 
+	
+	
+	forward: function(e) {
+	 	  // get target
+		 var target = window.event ? window.event.srcElement : e ? e.target : null;
+	    	 if (!target) return; 
+		 
+		 var reqtype = "tab"; //set default request type
+		  
+		 //check if the request is from a widget
+		 if (target.href.indexOf("widgetid")!=-1) { 	 
+		  reqtype = "widget";
+		}
+		 
+		 // construct a URL based upon our predetermined Base Request URL and the query string of the clicked link
+		 if (reqtype=="tab") {
+		    var myURL = AppVars.reqURL + '?reqtype=' + reqtype + '&' + UTIL.URLgetQueryString(target.href);
+		 } else if (reqtype=="widget") {
+		    var myURL = AppVars.reqURL + '?' + UTIL.URLgetQueryString(target.href);	
+		 } 
+		  
+		 	rD.get(myURL, ''); //no postrequest		
+		 ALINK.stopBubble(e);	//stop bubble
+			
+	},
+	
+	stopBubble: function(e) {
+				  if (window.event) {
+				      window.event.cancelBubble = true;
+				      window.event.returnValue = false;
+				      return;
+				  }
+				  
+				  if (e) {
+				  	  e.stopPropagation();
+				      e.preventDefault();
+				  }
+	}	
+}
+
+
+
+
+
+sfHover = function() {
+	
+	// get the list elements
+	var sfEls = document.getElementById("dropnav").getElementsByTagName("li");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}				
+}
+
+
+		
+	
+ /*******************************************************************************/
+/* ------------------/ Tab Action /------------------------------------------- */
+/*******************************************************************************/
+																					
+TabAction = {
+		
+		changeTab: function(elmID) {
+			var moduleid =UTIL.URLgetValueFromKey(location.href, "moduleid"); 
+						
+			//construct the URL and refresh the infoBar
+			if (!moduleid) moduleid = 'home';
+			var myURL = AppVars.reqURL + '?reqtype=tab&moduleid=' + moduleid + '&tabid=' + elmID.replace("tab", "");
+			
+			//alert(moduleid);
+			rD.get(myURL, ''); //no postrequest
+			
+			//set the tab focus
+			//TabAction.setActiveTab(elmID);			
+			
+		},
+		
+		
+		setActiveTab: function(tabID) {			
+			// make the selected tab the focus tab
+			var Tabs = document.getElementById("tabs").getElementsByTagName("a");
+			for (var i=0; i<Tabs.length; i++) {
+				if (Tabs[i].id == tabID) {
+					Tabs[i].className=Tabs[i].className.replace(new RegExp("tabunselected\\b"), "tabselected");
+				} else {
+					Tabs[i].className=Tabs[i].className.replace(new RegExp("tabselected\\b"), "tabunselected");
+				}					
+		
+			}
+			
+	
+	
+		},	
+				
+				
+		
+		// unselect a tab. By default is set a tab to selected, when another tab is clicked is it not unset.
+		unSelectRow: function() {
+		 	var myTabs = document.getElementById("tabs").getElementsByTagName("a");
+			for (var i=0; i<myTabs.length; i++) {
+				if (i == 0) {
+						myTabs[i].className = myTabs[i].className.replace("tabselected", "");
+				}			
+			}			
+		}	
+				
+}
+	
+
+
+/*******************************************************************************/
+/* ------------------/ DATA (remoteData rD) FUNCTIONS /-------------------------*/
+/*******************************************************************************/ 
+var tBL = {
+	init: function() {
+		//add table row highlighting
+		tRow.init();
+		tFilt.init();
+		fHandler.init();
+		//tTip.enableTooltips('tblNav');
+		
+	}
+}
+
+
+ /*******************************************************************************/
+/* ------------------/ DATA (remoteData rD) FUNCTIONS /-------------------------*/
+/*******************************************************************************/ 
+rD = {
+	// creates new Taconite Ajax Request Object and requests product info from the cfc
+ 		get: function(url, postReq) {
+				var ajaxRequest = new AjaxRequest(url);
+                		//ajaxRequest.setEchoDebugInfo();
+		        	if (postReq) ajaxRequest.setPostRequest(postReq);
+		        	ajaxRequest.sendRequest();	
+		}	
+}
+
+
+ /*******************************************************************************/
+/* ------------------/ UTILITY FUNCTIONS /------------------------------------- */
+/*******************************************************************************/ 
+UTIL = {
+	  	 //function to retrieve the value from key/value pair in the url scope
+  	 URLgetValueFromKey: function(url, key) {
+  	 	
+  	 	var N_StartOfKey 	= url.indexOf(key); //find the start of the key
+  	 	var N_EndOfKey 		= url.length; //by default end of key is end of URL
+  	 	
+  	 	// if not found, exit function
+  	 	if (N_StartOfKey == -1) return;
+  	 	  	 	
+  	 	// now truncate the first part of the URL leaving everything after the Key we are looking for
+  	 	var myVal 	= url.substring((N_StartOfKey+key.length+1),url.length);
+  	 	
+  	 	//see if this is last name/value pair by checking for ampersand
+  	 	if (myVal.indexOf("&") != -1) {
+  	 	   myVal = myVal.substring(0,myVal.indexOf("&"));		
+  	 	}
+  	 	 	 	
+  	 	return myVal;	
+  	 },
+  	 
+  	  URLgetQueryString: function(URL) {
+  	 	var myVal = URL.replace("http://", "");
+  	 	var querystring_start = myVal.indexOf("?") + 1;
+  	 	var querystring_end = myVal.length;
+  	 	return myVal.substring(querystring_start,querystring_end);
+  	 
+  	  },
+  	  
+  	  URLgetScriptName: function(URL) {
+  	 	
+  	 	// to get the script name strip off host, port and any query string attributes
+  	 	var myVal = URL.replace("http://", "");
+  	 	var script_start = myVal.indexOf("/") + 1;
+  	 	
+  	 	// by default the end point is the end of the URL
+  	 	var script_end = myVal.length;
+  	 	
+  	 	// if there is a query string, set the script_end just before it starts
+  	 	if (myVal.indexOf("?") != -1) script_end = myVal.indexOf("?");
+  	 	
+  	 	// get the substring, but prepend with a forward slash  	 	 	
+  	 	myVal 	= "/" + myVal.substring(script_start,script_end);
+  	 	
+  	 	return myVal;	
+  	 }
+  	 
+}
+
+					
+ /*******************************************************************************/
+/* ------------------/ EVENT Setup /------------------------------------------- */
+/*******************************************************************************/ 
+
+  
+  eV = {
+	addEvent: function(elm, evType, fn, useCapture) {
+    if (elm.addEventListener) {
+      elm.addEventListener(evType, fn, useCapture);
+      return true;
+    } else if (elm.attachEvent) {
+      var r = elm.attachEvent('on' + evType, fn);
+      return r;
+    } else {
+      elm['on' + evType] = fn;
+    }
+  },
+ 
+    find_target: function(e)	{
+	/* Begin the DOM events part, which you */
+	/* can ignore for now if it's confusing */
+	var target; 
+		
+	if (window.event && window.event.srcElement) 
+		target = window.event.srcElement;
+	else if (e && e.target)
+	    target = e.target;
+	
+	if (!target)
+	    return null;
+		
+	while (target != document.body &&
+	     target.nodeName.toLowerCase() != 'a')
+	     target = target.parentNode;
+		
+	if (target.nodeName.toLowerCase() != 'a')
+	    return null;
+		
+	return target;
+	}
+  
+}
+
+ /*******************************************************************************/
+/* ------------------/ After document run init method /------------------------ */
+/*******************************************************************************/ 
+eV.addEvent(window, 'load', init, false);				

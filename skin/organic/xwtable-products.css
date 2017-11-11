@@ -1,0 +1,126 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype xwtable products                                   *
+*  Skin        :  Organic													          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  19/04/2006                                                   *
+*  History     :  13/12/06 - Added basket quantity input field class           *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+table.products {padding:0; margin:0; border:0; border-collapse:collapse; font-family: Arial, sans-serif; font-size: 1em;}
+
+/*******************************************************************************/
+/* ------------------/ Product Info and Recipe tool tips /--------------------- */
+/*******************************************************************************/
+
+/* -------------/ Product Info Tool Tip Rollover / ------------*/
+div#pInfoDiv {position: absolute; width: 500px; z-index:1000;}
+
+span#pInfoDiv-loading {position: absolute; top:3.5em; right: 1em; font-size:1em; color: #F36A19; font-weight: bold; height: 20px; width: 150px; padding: 0.6em; display: block; /*border: 1px solid #177730; background-color: #C5E0C6*/}
+
+/* ---- VERSION 2: head, body and footer--- */
+div#pInfoDiv-hd {height: 57px; background: url(/skin/organic/productInfo-hd-v2.png) no-repeat;}
+div#pInfoDiv-body {width: 500px; background: url(/skin/organic/productInfo-body-v2.png) repeat-y; padding: 1em 0em; color: Black} 
+div#pInfoDiv-foot {height: 9px; width: 500px; background: url(/skin/organic/productInfo-foot-v2.png) no-repeat;}
+img#pInfoDiv-pointer {position: absolute; top: 100px; left: 474px; display: block;}
+
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap {margin-left: 5px;  margin-right: 40px;}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdTitle {position: absolute; top: 10px; left: 10px; color: White; font-size: 1.1em;}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc {padding-left: 10px; margin-top: -16px;}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc img {float: left; padding-bottom: 5px; padding-right: 1em;}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc img.icon {float: none; vertical-align: -1px; padding: 0;}
+
+/* Recipe: List */
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc ul li {list-style: square; color: #934E08; margin-left: 10px;}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc ul li.moreIngredients {color: #D8720B;}
+/* Recipe: Image and Popular recipes */
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc div#recipeRHS {float: right; padding-bottom: 5px; width: 165px; color: #F36A19}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc div#recipeRHS img  {padding-bottom: 5px; padding-right: 0px;}
+div#pInfoDiv div#pInfoDiv-body div#pInfoInnerWrap p#pInfoProdDesc div#recipeRHS div {border:1px solid #F36A19; width: 165px; height: 50px; padding-bottom: 5px; padding-right: 1em;}
+
+
+
+/*******************************************************************************/
+/* ------------------/ Table header /------------------------------------------ */
+/*******************************************************************************/
+table.products tr {font-size: 0.8em;}
+table.products tr th {font-weight: Bold; color: Black; padding: 0.2em 0.5em; border-bottom: 1px solid #C2A681;}
+table.products tr th a, table.products tr.altrow th a {color: #F48A1D; text-decoration: none;}
+table.products tr th a:hover, table.products tr.altrow th a:hover {color: #F48A1D; text-decoration: underline;}
+
+/*******************************************************************************/
+/* ------------------/ Table Rows  /------------------------------------------ */
+/*******************************************************************************/
+/* Table Rows: colmn borders for left and right outermost cells */ 
+table.products tr th.lhscol, table.products tr td.lhscol, table.products tr.altrow th.lhscol, table.products tr.altrow td.lhscol {/*border-left: 1px solid black;*/} 
+table.products tr th.rhscol, table.products tr td.rhscol, table.products tr.altrow th.rhscol, table.products tr.altrow td.rhscol {/*border-right: 1px solid black;*/}
+
+/* Table Rows: if no records are found */ 
+table.products tr td.norecfound {padding: 2em 1em; color: #EE8300; font-size: 1.1em; font-weight: Bold}
+
+/* Table Rows: altrow background color */ 
+table.products tr.altrow {background-color: #FFDFA2;}
+
+/* Table Rows: row borders */ 
+table.products tr td, table.products tr.altrow td {padding: 0.2em 0.5em; border-bottom: 1px solid #C2A681;}
+
+/* Table Rows: No bottom border on last row */ 
+table.products tr.nobtmbdr td {border: none;}
+
+/* Table Row: Highlighter */
+table.products tr.hilite, table.products tr.altrow.hilite, table.products tr.nobtmbdr.altrow.hilite, table.products tr.nobtmbdr.hilite {background-color: #D5E0EE;}
+
+/* Table Rows: row links */
+table.products tr td a, table.products tr.altrow td a {color: Black; text-decoration: none;}
+table.products tr td a:hover, table.products tr.altrow td a:hover {color: Blue; text-decoration: underline;}
+
+/* added: 01/08/06 - Fix IE issue with underline text on ProductInfo popup layer */
+table.products tr td a.prodinfo:hover, table.products tr.altrow td a.prodinfo:hover {color: Black; text-decoration: none; text-align: left;}
+table.products tr td a.recipeinfo:hover, table.products tr.altrow td a.recipeinfo:hover {color: Black; text-decoration: none; text-align: left;}
+
+/* Table Rows: AddtoBasket quantity field (13/12/06 - MB) */
+table.products tr td input.addqty {width: 1.3em; font-size: 0.9em; margin-left: 5px; padding: 1px; background-color: #FFEFD0; border: 1px solid #C2A681; color: #F48A1D}
+
+/* Table Rows: AddtoBasket link */
+table.products tr td a.addtobasket, 
+table.products tr.altrow td a.addtobasket,
+table.products tr td a.addtobasket:hover, 
+table.products tr.altrow td a.addtobasket:hover {font-weight: bold; color: #F48A1D; text-decoration: none;}
+table.products tr td span.outOfStock, table.products tr.altrow td span.outOfStock {font-weight: bold; color: #9A9A9A; text-decoration: none;}
+
+/* /*********************************** Table Row Form Fields (Filter)******************************************************************/  
+#tblFilter input.frmFilterFld {width: 100px;}
+
+/********************************************************************************/
+/* ------------------/ Table Footer  /----------------------------------------- */
+/*******************************************************************************/
+
+/* Table Footer: nested table navigation: Links */
+#foot-nav {width: 100%; border:none; font-size: 1.3em;} 
+#foot-nav #foot-tblNav {background-color: transparent; }
+#foot-nav #foot-tblNav td {padding: 0; /*border:1px solid #ccc;*/}
+
+/* default style * /
+#foot-nav #foot.tblNav td.posleft {width: 33%; text-align: left;}
+#foot-nav #foot.tblNav td.posCenter {width: 34%; text-align: center; font-weight: bold}
+#foot-nav #foot.tblNav td.posRight {width: 33%; text-align: right; padding-right: 1em;}
+#foot-nav #foot.tblNav td span.tblfilter {padding-left: 1em; color: Blue}
+#foot-nav #foot.tblNav td span.txt_divider {font-size: 1.2em; color: Silver;}
+#foot-nav #foot.tblNav td span.txt_divider_black {margin-left: 1em; font-size: 1.2em; color: Black;}
+
+/* google style results */ 
+#foot-nav #foot-tblNav td.gs-posleft {width: 80%; text-align: left; line-height: 2.4em; height: 34px;}
+#foot-nav #foot-tblNav td.gs-posRight {width: 20%; text-align: right; padding-right: 1em;}
+#foot-nav #foot-tblNav td.gs-posleft span.gs-nav-text-results {color: #F48A1D; font-weight: bold; padding-right: 20px;}
+#foot-nav #foot-tblNav td.gs-posleft a.gs-nav-previous img {padding-left: 5px; padding-right: 5px;vertical-align: middle;}
+#foot-nav #foot-tblNav td.gs-posleft a.gs-nav-next 	 img {padding-left: 5px; padding-right: 5px;vertical-align: middle;}
+#foot-nav #foot-tblNav td.gs-posleft a, #foot-nav #foot.tblNav td.gs-posleft span {text-decoration: none;  color: black;} 
+#foot-nav #foot-tblNav td.gs-posleft a:hover {text-decoration: underline;  color: black;}
+#foot-nav #foot-tblNav td.gs-posleft #gs-pagelinks {padding-left: 10px; padding-right: 10px;}
+#foot-nav #foot-tblNav td.gs-posleft #gs-pagelinks span {font-weight: bold; color: #F48A1D; padding-left: 3px; padding-right: 3px;}
+#foot-nav #foot-tblNav td.gs-posleft #gs-pagelinks a {padding-left: 3px; padding-right: 3px; text-decoration: underline;} 

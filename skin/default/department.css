@@ -1,0 +1,32 @@
+	/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype xwtable department                                 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  16/04/2006                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/* ------------------/ Lists /------------------------------------------------ */
+/*******************************************************************************/
+#listContainer {background-color: #E9F5DF; border: 1px solid #8FCB5B; padding:6px; padding-bottom: 6px;}
+
+#listContainer a.showAll			{font-size: 0.8em; padding: 3px; display: block; margin-bottom: 3px;}
+#listContainer a.showAll:hover	{background-color: #C0E2A3; color: #177730; text-decoration: underline; padding: 2px;  border:1px solid #A1D374}
+
+#listContainer #list1, #listContainer #list2, #listContainer #list3 {float: left; margin-right: 20px; width: 210px; /*border: 1px solid white;*/} 
+#listContainer #list1 {border-right: 1px solid #8FCB5B}
+#listContainer #list2 {border-right: 1px solid #8FCB5B}
+#listContainer #list3 {margin-right: 0px;}
+#listContainer li {font-size: 0.8em; position: relative; padding-bottom: 0px;}
+#listContainer li a {text-decoration: none; color: Black; display: block; width: 198px; padding: 3px; }
+#listContainer li a:hover {background-color: #C0E2A3; color: #177730; text-decoration: underline; padding: 2px;  border:1px solid #A1D374}
+#listContainer li a span {position: absolute; right: 1em; color: #177730}
+#listContainer li a:hover span {background-color: #B0DA8B;}

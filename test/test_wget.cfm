@@ -1,0 +1,1 @@
+<cfoutput>hello wget</cfoutput>

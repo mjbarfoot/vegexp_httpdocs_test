@@ -1,0 +1,62 @@
+/*******************************************************************************
+*                                                                              *
+*  Desc			:  prototype: common  styles used regardless of skin            *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  16/04/2006                                                   *
+*  History     : 	28/06/2006 - Added a.linkNewSearch                           *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ shopFilterDisplayBar /---------------------------------- */
+/*******************************************************************************/
+#shopFilterDisplayBar 					{font-weight: bold; font-size: 0.8em; margin-top: 4px; margin-bottom: 1em; padding: 3px;}
+#shopFilterDisplayBar span 			{font-weight: bold}
+#shopFilterDisplayBar a 				{text-decoration: none; font-weight: bold}
+#shopFilterDisplayBar a:hover 		{text-decoration: underline;}
+#shopFilterDisplayBar-All				{color: #1D7545}
+#shopFilterDisplayBar-Organic 		{color: #DE8936}
+#shopFilterDisplayBar-Vegan 			{color: #7C2586}
+#shopFilterDisplayBar-GlutenFree		{color: #1F4A81}
+
+/*******************************************************************************/
+/* ------------------/ breadCrumbTrail /-------------------------------------- */
+/*******************************************************************************/
+#breadCrumbTrail 							{font-size: 1.0em; padding: 3px; font-weight: Bold; margin-top: 0.6em; margin-bottom: 0.6em;}
+#breadCrumbTrail a 						{text-decoration: none; color: Black;}
+#breadCrumbTrail a:hover				{text-decoration: underline; color: Black;}
+#breadCrumbTrail a.selectALL			{text-decoration: underline; color: Black;}
+#breadCrumbTrail a#breadCrumbTrail-Another {font-size: 0.8em; padding-left: 10px; color: Blue; text-decoration: underline; font-weight: Normal;}
+#breadCrumbTrail a.linkNewSearch   {font-size: 0.8em; color:Blue; padding-left:30px; text-decoration: underline; font-weight: Normal;}
+
+/*******************************************************************************/
+/* ------------------/ organic, glutenfree, and vegan icons 
+							 that appear in the product list description column------- */
+/*******************************************************************************/
+span.desc-col-lefpad {padding-left: 1em;}
+img.desc-col-icon {padding: 0px 4px;}
+
+/*******************************************************************************/
+/* ------------------/ Advanced Search Link ---------------------------------- */
+/*******************************************************************************/
+a.linkNewSearch {color: Blue; font-size: 1em !important;}
+
+
+/*******************************************************************************/
+/* ------------------/ default formn ------------------------------------------ 
+/*******************************************************************************/
+/*form 										{font-size: 1em;}
+form span.fieldsetTitle				{font-weight: Bold;}
+form fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.5em 0em;}
+form fieldset p						{margin: 0.6em 0em; clear: left}
+form fieldset p label				{text-align: right; float: left; width:125px; padding-right: 20px;}
+form fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+form fieldset p label.extralong  {text-align: left; float: left; width:530px; padding-right: 10px;}
+form fieldset p label.long span	{padding-left: 20px;}
+form fieldset p label.fldinline  {text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+form fieldset p input				{width: 357px; color: #177730}
+form fieldset p input.small		{width: 125px; }
+form fieldset p input.med			{width: 200px; }
+form fieldset p input.btn			{width: 125px; } 
+form fieldset p input.radiobtn	{width: 25px; }*/ 

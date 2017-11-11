@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<contents>
+	
+	<item>
+		<name>Tab 1</name>
+		<category>Spry Intro</category>
+		<url>submenu3.xml</url>
+		<intro>Spry Intro</intro>
+		<desc><![CDATA[The Spry framework for Ajax is a JavaScript library for web designers that provides functionality that allows designers to build pages that provide a richer experience for their users. It is designed to bring Ajax to the web design community who can benefit from Ajax, but are not well served by other frameworks.]]></desc>
+        <photo/>
+		<linktitle>Getting Started</linktitle>
+		<link>http://labs.adobe.com/technologies/spry/</link>
+	</item>
+	
+	<item>
+		<name>Tab 2</name>
+		<category>Spry Examples</category>
+		<url>submenu3.xml</url>
+		<intro>Spry Intro</intro>
+		<desc><![CDATA[The first release of the Spry framework is a preview of the data capabilities that enable designers to incorporate XML data into their HTML documents using HTML, CSS, and a minimal amount of JavaScript, without the need for refreshing the entire page. The Spry framework is HTML-centric, and easy to implement for users with basic knowledge of HTML, CSS and JavaScript. The framework was designed such that the markup is simple and the JavaScript is minimal. The Spry framework can be used by anyone who is authoring for the web in their tool of choice.]]></desc>
+		<photo>images/orbs2.jpg</photo>
+		<linktitle>Demos</linktitle>
+		<link>http://labs.adobe.com/technologies/spry/demos/</link>
+	</item>
+	
+	<item>
+		<name>Tab 3</name>
+		<category>Spry Forum</category>
+		<submenu>
+			<menu>
+				<name>Link A</name>
+				<descsub><![CDATA[ing for the web in their tool of choice.]]></descsub>
+			</menu>
+			<menu>
+				<name>Link B</name>
+				<descsub><![CDATA[is a preview of the data capabilities that enable.]]></descsub>
+			</menu>
+			<menu>
+				<name>Link C</name>
+				<descsub><![CDATA[nable designers to incorporate XML data into their HTML ool of choice.]]></descsub>
+			</menu>
+		</submenu>
+		
+		<intro>Spry Intro</intro>
+		<desc><![CDATA[This is just the start of the project. We are releasing preview build now so that you have plenty of time to send us feedback on what's working for you, and what isn't. Your feedback and participation is important as we build out the framework. This is just a simple sample, expand on this with the spry features currently available.]]></desc>
+        <photo>images/orbs4.jpg</photo>
+		<linktitle>Participate in Spry Forums</linktitle>
+		<link><![CDATA[http://www.adobe.com/cfusion/webforums/forum/categories.cfm?forumid=72&catid=602&entercat=y]]></link>
+	</item>	
+</contents>

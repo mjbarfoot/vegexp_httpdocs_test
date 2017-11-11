@@ -1,0 +1,104 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype - Checkout                                         *
+*  Skin        :  Default													          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  08/05/  06                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Wrapper ------------------------------------- */
+/*******************************************************************************/
+#checkoutContainer {background-color: White; border: 1px solid #649C32; padding:0.7em; }
+
+#checkoutContainer p.shopperFeedBack {font-size: 0.8em; margin: 1em 0em;}
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Actions/Buttons ----------------------------- */
+/*******************************************************************************/
+#checkoutTitle {display: inline; font-size: 0.9em; margin-bottom: 6px; font-size: bold}
+
+/* basket Actions : Prototype */
+#checkoutActions {position: relative; display: block; font-size: 1em; margin-bottom: 20px; margin-top: 12px;  text-align: left; padding-right: 4px;}
+#checkoutActions input {position: absolute; width: 125px;  top: 0.4em; right: 1.3em;  border: 1px solid #177730; padding: 3px; color: #177730; font-weight: bold; background-color: #CBE7B3; text-decoration: none; font-size: 0.9em; margin-left: 20px; cursor: pointer; }
+#checkoutActions a {border: 1px solid #177730; padding: 3px; color: #177730; background-color: #DEF0D0; text-decoration: none; font-size: 0.9em; margin-left: 20px;}
+#checkoutActions a:hover {border: 1px solid #177730; padding: 3px; color: #177730; background-color: #CBE7B3; text-decoration: none;}
+#checkoutActions a  img { vertical-align: text-bottom; padding: 0px 5px;}
+
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Section Break ----------------------------- */
+/*******************************************************************************/
+#checkoutContainer div.chkoutSec {margin: 1em 0em;}
+#checkoutContainer div.chkoutSec span.chkoutSecTitle {position: relative; border-bottom: 1px solid #177730; font-weight: bold; font-size: 0.8em; display: block; padding-bottom: 0.4em; margin-top:0.4em;}
+
+div.chkoutSec p {font-size: 0.8em; margin: 0.4em 0em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Read only Shopping List----------------------- */
+/*******************************************************************************/
+/* myBasketItems Table */
+#myBasketItems {font-size: 0.8em; width: 672px; border: none !important; border-bottom:1px solid #CBE7B3; border-collapse: collapse;} 
+#myBasketItems th {text-align:left; padding: 3px; border-right: none !important; border-left: none !important; border-bottom: 1px solid #CBE7B3; background-color: #CBE7B3;} 
+#myBasketItems td {padding: 3px;  border-right: none !important; border-left: none !important;  border-bottom: 1px solid #CBE7B3;}
+#myBasketItems td a.basketItemDelete {color: Black; text-decoration: none;	font-weight: Bold;}
+#myBasketItems td a.basketItemDelete:hover {color: Black; text-decoration: none;	font-weight: Bold; text-decoration: underline;}
+#myBasketItems #myBasketItemsGrandTotal {font-weight: Bold; font-size: 1.2em;}
+#myBasketItems #myBasketItemsGrandTotal td {padding: 5px 3px;}
+#myBasketItems #myBasketItemsGrandTotal #myBasketItemsGrandTotalTxt {text-align: right;}
+#myBasketItemsFooter td {border: none; background-color: #CBE7B3;}
+
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Customer PO field----------------------- */
+/*******************************************************************************/
+div#customerPO span.customerPOfield {font-size: 0.8em; font-weight: bold; color: #177730}
+
+
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Delivery Details  /--------------------------- */
+/*******************************************************************************/
+span#addDelDay {color: #177730; font-weight: bold;}
+table#delAddress {font-size: 0.8em;	margin-top: 0.4em; margin-bottom: 0.4em;}
+table#delAddress td.delColDesc {color: Black; width: 120px; text-align:left;}
+table#delAddress td span.delField {color: #177730; font-weight: bold;}
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Credit Card Form (Fieldset) /------------------ */
+/*******************************************************************************/
+div#ccFieldset fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.5em 0em; font-size: 0.8em;}
+div#ccFieldset fieldset p							{margin: 0.6em 0em; clear: left}
+div#ccFieldset fieldset p label					{text-align: right; float: left; width:170px; padding-right: 20px;}
+div#ccFieldset fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+div#ccFieldset fieldset p label.extralong  	{text-align: right; float: left; width:530px; padding-right: 10px;}
+div#ccFieldset fieldset p label.long span		{padding-left: 20px;}
+div#ccFieldset fieldset p label.fldinline 	{text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+div#ccFieldset fieldset p input					{width: 150px; color: #177730}
+div#ccFieldset fieldset p input.small			{width: 30px; }
+div#ccFieldset fieldset p input.medsmall		{width: 70px; }
+div#ccFieldset fieldset p input.med				{width: 200px; }
+div#ccFieldset fieldset p input.btn				{width: 125px; } 
+div#ccFieldset fieldset p input.radiobtn		{width: 25px; }
+
+/* inline fields */
+div#ccFieldset fieldset p.inline 				{margin: 0.6em 0em;}
+div#ccFieldset fieldset p.inline  label		{text-align: right; padding-right: 20px;}
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Customer has credit account /------------------ */
+/*******************************************************************************/
+div#isCreditAuthorised {font-size: 0.8em; font-weight: bold; color: #177730}
+
+
+/*******************************************************************************/
+/* ------------------/ Checkout: Notes --------------------------------------- */
+/*******************************************************************************/
+div.chkoutSec ul#ordNotes 		{margin-left: 20px; font-size: 0.8em; margin-top:1em; margin-bottom:2em;}
+div.chkoutSec ul#ordNotes li  {list-style: decimal;}
+

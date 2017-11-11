@@ -1,0 +1,232 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  web control panel layout                                     *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  27/11/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+* {margin: 0; padding: 0; font-family: "Trebuchet MS", Arial;}
+ img {border: 0;}
+
+/*******************************************************************************/
+/* ------------------/ Body /------------------------------------------------ */
+/*******************************************************************************/
+ body {background-color: #f2f2f2;}
+ 
+/*******************************************************************************/
+/* ------------------/ Header /------------------------------------------------ */
+/*******************************************************************************/
+div#header {position: relative; border-top: 6px solid #177730; border-bottom: 1px solid #A2C9AC; background-color: white; height: 80px;  min-width: 500px;; }
+div#header a#vegexp_logo {position: absolute; top: 0.2em; left: 0.6em;}
+
+/*******************************************************************************/
+/* ------------------/ Header - toprightnav /---------------------------------- */
+
+div#toprightnav {font-size: 0.8em; color: white; padding: 5px 1em 2px 120px; 	position: absolute;	top: 0px; right: 0px;
+					  background: url(/skin/default/cntrl/cp_txt_wcp.gif) 0 0  no-repeat; background-color: #177730;}
+div#toprightnav a {color: white;	text-decoration: none; background-color: #177730; }
+div#toprightnav a:hover {text-decoration: underline;}
+
+
+/*******************************************************************************/
+/* ------------------/ Header - modulenav /---------------------------------- */
+div#modulenav {position: absolute; /*font-size: 0.7em; font-weight: 500;*/ right: 0em; bottom: 0em; /*border-left: 1px solid #A2C9AC;*/ border-top: 1px solid #A2C9AC;
+		padding: 0.3em 1em 0.3em; margin-left: 300px;}
+div#modulenav ul {display: inline;	list-style-type: none; margin: 0;padding: 0; cursor: pointer;}
+div#modulenav ul li {float: left; list-style-type: none; font-family: Arial; padding: 0 0.3em; }
+div#modulenav ul li:last-child {border-right: none;} 		
+div#modulenav ul li a, div#modulenav ul li span
+{float: left; width: 90px; height: 18px; cursor: pointer; background-repeat: no-repeat; background-position: center 0px;}
+div#modulenav ul li a span {display: none;}
+div#modulenav ul li a#navitem-customers  {background-image: url(/skin/default/cntrl/nav_customers.gif);}
+div#modulenav ul li a#navitem-products  {background-image: url(/skin/default/cntrl/nav_products.gif);}
+div#modulenav ul li a#navitem-orders {background-image: url(/skin/default/cntrl/nav_orders.gif);}
+div#modulenav ul li a#navitem-content {background-image: url(/skin/default/cntrl/nav_content.gif);}
+div#modulenav ul li a#navitem-health {background-image: url(/skin/default/cntrl/nav_health.gif);}
+div#modulenav ul li a#navitem-sage {background-image: url(/skin/default/cntrl/nav_sage.gif);}
+div#modulenav ul li span#navitem-more {background-image: url(/skin/default/cntrl/nav_more.gif); padding-bottom: 1px;}
+div#modulenav ul li a:hover {background-position: center -19px;}		
+
+
+/*******************************************************************************/
+/* ------------------/ Header - dropnav /---------------------------------- */
+
+
+/* HERE IS THE WHOLE THING */
+#dropnav {}
+
+#dropnav ul{
+/*	border:1px solid #333333;
+	border-color: #FFFFFF #FFFFFF #CCCCCC #CCCCCC;
+	background-color:#f7f3f3;
+	width:270px;
+	padding-bottom:7px; */
+	
+}
+
+#dropnav ul a:link, #dropnav a:visited {
+	display: block;
+	float: none;
+	border:none;
+	text-decoration:none;
+	padding:0px 10px 0px 10px;
+	height:15px;
+	color: #177730;
+}
+
+#dropnav li { /* all list items */
+	position: relative;
+	text-align: right;
+	cursor: default;
+	padding:0px 5px;
+	margin:0px;
+	color:#999999;
+	width:90px;
+}
+
+#dropnav li ul { /* second-level lists */
+	position: absolute;
+	float: none;
+	display: block;
+	border-top: none;
+	border-left: 1px solid #177730;
+	border-right: 1px solid #177730;
+	border-bottom: 1px solid #177730;
+	background-color: White;
+	width: 90px;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#dropnav li ul li {
+	float: none;
+	margin-bottom: 6px;
+	margin-top: 3px;
+}
+
+
+#dropnav li:hover ul, #dropnav li.sfhover ul { /* lists nested under hovered list items */
+	left:0px;
+	top:19px;
+	z-index: 30;
+}
+
+#dropnav ul a:hover, #current a{}
+
+#dropnav li:hover ul li a {width: 90px; height: 18px; cursor: pointer; background-repeat: no-repeat; background-position: 2px 0px; z-index: 30;}
+#dropnav li:hover ul li a span {display: none;}
+#dropnav li:hover ul li a#dropnav-payments {background-image: url(/skin/default/cntrl/nav_payments.gif); z-index: 30;}
+#dropnav li:hover ul li a#dropnav-security {background-image: url(/skin/default/cntrl/nav_security.gif); z-index: 30;}
+#dropnav li:hover ul li a#dropnav-settings {background-image: url(/skin/default/cntrl/nav_settings.gif); z-index: 30;}
+#dropnav li:hover ul li a:hover {background-position: 2px -19px; z-index: 30;}	
+
+/* ------------------/ Header: END / ------------------------------------------ */
+/*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Main /------------------------------------------------ */
+/*******************************************************************************/
+div#main {padding: 0.5em;}
+
+
+
+/*******************************************************************************/
+/* ------------------/ Content Wrapper /--------------------------------------- */
+/*******************************************************************************/
+div#contentWrapper {
+	text-align: left;
+	border: 1px solid #666;
+	background: #FFFDF3;
+	clear: both;
+	margin-top: 0;
+	z-index: 0;
+}
+
+/*******************************************************************************/
+/* ------------------/ contentInfo  /--------------------------------------- */
+/*******************************************************************************/
+div#contentInfo {position: relative; height: 23px; border-bottom: 1px solid #999999; background-image:  url(/skin/default/cntrl/contentinfo_bg.gif); background-repeat: repeat-x; padding-left: 5px;  z-index: 10;}
+
+  /***************************************************************************/
+  /* ------------------/ contentInfo - breadcrumb trail /------------------ */
+div#contentInfo  span#breadcrumb {font-size: 0.8em; font-family: Arial; color: #177730; font-weight: bold;}
+div#contentInfo  span#breadcrumb a {color: #177730; text-decoration: none;}
+div#contentInfo  span#breadcrumb a:hover {color: #177730; text-decoration: underline;}
+
+  /* ------------------/ contentInfo - action status and message /------------------ */
+div#contentInfo div#actionStatus {position: absolute; right: 1em; top: 0em; z-index: 20;}
+div#contentInfo div#actionStatus span#Status {font-size: 0.8em; font-family: Arial; color: #A9A9A9;  z-index: 20;}
+div#contentInfo div#actionStatus span#Message {font-size: 0.8em; font-family: Arial; color: #A9A9A9;  z-index: 20;}
+
+/* ------------------/ contentInfo: END / -------------------------------------- */
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/* ------------------/ Content Info  /--------------------------------------- */
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/* ------------------/ Tabs /------------------------------------------------ */
+/*******************************************************************************/
+
+#tabs {font-size: 0.8em; font-weight: bold; clear: both;	text-align: center;}
+#tabs ul {display: inline;	list-style-type: none; margin: 0;padding: 0; cursor: pointer;}
+#tabs li { float: left; }
+#tabs a,span { width: 70px; /*background: #dee9ed;*/ }
+#tabs li a {background: url(/skin/default/cntrl/tab_bg.gif) repeat-x; position: relative;	top: 0;	margin: 0 2px 0 0;	float: left;	border-right: 1px solid #666;	border-top: 1px solid #666;
+	border-left: 1px solid #666;	padding: 3px 4px 3px 10px;	text-decoration: none;	color: #333;}
+#tabs li a:hover {/*background: url(/skin/default/cntrl/tab_bg_ro.gif) repeat-x;*/}	
+#tabs li a.tabselected {background: none; background-color: White;}	
+#tabs li a.tabunselected {background: url(/skin/default/cntrl/tab_bg.gif) repeat-x; background-color: transparent; }	
+
+#tabs a {position: relative; top: 0;	margin: 1px 2px 0 0;	float: left; background-color: #FFFAE1;	border-right: 1px solid #AAA;
+	border-top: 1px solid #AAA; border-left: 1px solid #AAA;	padding: 5px 4px 5px 10px;	text-decoration: none;	color: #333;
+	cursor: pointer;}
+/*#tabs a:hover {background: #FFF7CD;	position: relative;	top: 0;	padding: 5px 4px 6px 10px;	margin-top: 0px;}
+#tabs a.active {position: relative;	top: 0; margin: 0 2px 0 0;	float: left;	background: #FFF3B3;	border-right: 1px solid #666;
+	border-top: 1px solid #666; 	border-left: 1px solid #666;	padding: 6px 4px 6px 10px;	text-decoration: none;	color: #333;}
+#tabs a.active:hover {position: relative;	top: 0;	margin: 0 2px 0 0;	float: left;	background: #FFF3B3;	border-right: 1px solid #666;
+	border-top: 1px solid #666; border-left: 1px solid #666; padding: 6px 4px 6px 10px;	text-decoration: none;	color: #333;} */
+.tabshover{cursor: pointer; /*background: url(/skin/default/cntrl/tab_bg_ro.gif) repeat-x;*/ /*background-color: white; *//* text-transform: capitalize; */ font-weight: bold;}
+
+	
+/*******************************************************************************/
+/* ------------------/ Content /------------------------------------------------ */
+/*******************************************************************************/	
+/*div#content {border: 1px solid #666}*/
+
+div#content {padding: 20px; min-height: 300px; font-family: Arial; font-size: 1.2em;}
+/* for Internet Explorer */
+/*\*/
+* html div#content {
+height: 300px;
+}
+/**/
+
+
+/*******************************************************************************/
+/* ------------------/ Content: Pods /---------------------------------------- */
+/*******************************************************************************/	
+div#content div.pod {padding: 0.2em; border-bottom: 1px solid #DEDEDE; width: 20em; margin-bottom: 2em;}
+div#content div.podTitle {background-color: #177730;	color: White; padding: 0.1em; margin-bottom: 0.4em;}
+div#content div.podDescription {}
+div#content div.podDescription ul {list-style-type: square; margin-left: 15px;}
+
+/*******************************************************************************/
+/* ------------------/ Footer  /---------------------------------------- */
+/*******************************************************************************/	
+div#footer {
+	padding: 0em 1em;
+	color: #999;
+	font-size: 0.8em;
+	background-image: url(/skin/default/cntrl/poweredby.gif);
+	background-repeat: no-repeat;
+	background-position: right 0px;
+}

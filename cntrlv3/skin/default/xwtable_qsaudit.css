@@ -1,0 +1,160 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  xwtable - default design for qsaudit queue                   *
+*  Skin        :  Default													          		 *
+*  Site        :  http://qsaudit.facilitator-mxes.com				          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  20/06/2007                                                  *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Table Defaults /---------------------------------------- */
+/*******************************************************************************/
+table.qsdefault {/*position: relative;*/ border: 0; padding:0; margin:0; border-collapse:collapse; font-family: arial, sans-serif; font-size: 0.9em;}
+
+/*******************************************************************************/
+/* ------------------/ Cell  Defaults /---------------------------------------- */
+/*******************************************************************************/
+table.qsdefault tr td {font-family: Arial, Helvetica, sans-serif !important; color: #002469;}
+table.qsdefault tr.altrow td {font-family: Arial, Helvetica, sans-serif !important; color: #000;}
+
+/*******************************************************************************/
+/* ------------------/ Next of N header info /--------------------------------- */
+/*******************************************************************************/
+form div.qsdefault_nextofn {position: absolute; top: -1.3em; left: 0px;}
+form div.qsdefault_nextofn {color: black; font-size: 1.4em;}
+form div.qsdefault_nextofn span.txtBlue {color: #435D90;}
+
+/*******************************************************************************/
+/* ------------------/ Caption /--------------------------------------------- */
+/*******************************************************************************/
+table.qsdefault caption {position: relative; text-align: left; margin-top: 0.6em; border: 0; font-size: 0.8em; color: Black; font-weight: bold; padding-bottom:0.8em; height: 1.4em; width: 100%;}
+table.qsdefault caption span.captionText {position: absolute; display: block; top: 0em;}
+table.qsdefault caption span.dataUpdated {position: absolute; display: block; right: 0em; top: 0em; text-align: center; padding-left: 2.5em; padding-right: 2.5em; color: #B22222; font-size: 1.2em; border: 2px solid #305F90; background-color: #F4F4F4; font-weight: bold;}
+
+/*******************************************************************************/
+/* ------------------/ Table Header /----------------------------------------- */
+/*******************************************************************************/
+/* Table header: Wrapper */
+table.qsdefault thead tr.nestedTblWrapper th {font-size: 1em; background : url('/skin/default/xtable-bg.gif') repeat-x 0 0; /*background-color: #F2F2F2;*/ color: black;}
+
+/*Table header: nested table navigation */
+table.qsdefault thead tr.nestedTblWrapper th table {width: 98%;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr {background-color: transparent; padding: 0;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody td {border: none; padding: 0; padding-top: 0.4em; padding-bottom: 0.4em; font-size: 1.2em;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td.posleft {width: 20%; text-align: left; }
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td.posCenter {width: 65%; text-align: center; font-weight: bold}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td.posCenter span {font-weight: normal; padding-left: 0.5em; padding-right: 0.5em;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td.posRight {width: 15%; text-align: right; padding-right: 1em;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td span.tblfilter {padding-left: 1em; color: Blue}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td span.tblfilter span.filterAcive {color: Green;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td span.txt_divider {font-size: 1.2em; color: Silver;}
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td span.txt_divider_black {margin-left: 1em; font-size: 1.2em; color: Black;}
+
+/* Table header: nested table navigation: Links */
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td a {font-size:1.2em; padding: 0.15em 0.3em; /*background-color: none; */ border: 1px solid #EBEBEB; }
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td a:hover {padding: 0.15em 0.3em; background-color: #F0F0F0; border: 1px solid #AAAAAA;}
+
+/* Table header: nested table navigation: SPAN (disabled links) */
+table.qsdefault thead tr.nestedTblWrapper th table tbody tr td span.recordnav span {font-size:1.2em; padding: 0.15em 0.3em; /*background-color: none;*/ border: 1px solid #F4F4F4; color: Black}
+
+/*******************************************************************************/
+/* ------------------/ Table Rows /----------------------------------------- */
+/*******************************************************************************/
+table.qsdefault tr {border: 0; background-color: White; font-size: 0.75em; /* border-right: 1px solid black;  border-left: 1px solid black;*/}
+
+
+table.qsdefault tr.highlight {background-color: #B5B5FF !important; font-weight: bold;}
+
+
+table.qsdefault tr th {font-weight: normal; background-color: #fff; color: #000; text-align: left; padding: 0.2em 0.5em; border-bottom: 1px solid #AAAAAA; font-weight: bold;}
+table.qsdefault tr th a, table.qsdefault tr.altrow th a {color: #000066; text-decoration: none; font-weight: bold;}
+table.qsdefault tr th a:hover, table.qsdefault tr.altrow th a:hover {text-decoration: underline;}
+
+/* Table Rows: colmn borders for left and right outermost cells */ 
+table.qsdefault tr th.lhscol, table.qsdefault tr td.lhscol, table.qsdefault tr.altrow th.lhscol, table.qsdefault tr.altrow td.lhscol {/*border-left: 1px solid black;*/} 
+table.qsdefault tr th.rhscol, table.qsdefault tr td.rhscol, table.qsdefault tr.altrow th.rhscol, table.qsdefault tr.altrow td.rhscol {/*border-right: 1px solid black;*/}
+
+/* Table Rows: if no records are found */ 
+table.qsdefault tr td.norecfound {padding: 2em 1em; color: Gray; font-size: 2.6em;}
+
+/* Table Rows: altrow background color */ 
+table.qsdefault tr.altrow {border: 0;  background-color: #F4F4F4;}
+
+/* Table Rows: row borders */ 
+table.qsdefault tr td, table.qsdefault tr.altrow td {padding: 0.2em 0.5em; border-left:1px solid #A0AEC7; border-right: 1px solid #A0AEC7; border-bottom: 1px solid #A0AEC7;}
+
+/* Table Rows: No bottom border on last row */ 
+table.qsdefault tr.nobtmbdr td {border-bottom: none;}
+
+/* Table Row: Highlighter */
+table.qsdefault tr.hilite, table.qsdefault tr.altrow.hilite, table.qsdefault tr.nobtmbdr.altrow.hilite, table.qsdefault tr.nobtmbdr.hilite {background-color: #D5E0EE;}
+
+/* Table Rows: row links */
+table.qsdefault tr td a, table.qsdefault tr.altrow td a {color: Black; text-decoration: none;}
+table.qsdefault tr td a:hover, table.qsdefault tr.altrow td a:hover {color: Blue; text-decoration: underline;}
+
+
+/* SELECT BOXES */
+table.qsdefault tr td input.chkbox, table.qsdefault tr.altrow td input.chkbox {margin: 0; padding: 0;}
+
+
+/* /*********************************** Table Row Form Fields (Filter)******************************************************************/  
+#tblFilter input.frmFilterFld {width: 100px;}
+
+
+/* /*********************************** Table Footer Navigation ******************************************************************/
+
+/* Table header: Wrapper */
+table.qsdefault tbody tr.nestedTblWrapper {}
+table.qsdefault tbody tr.nestedTblWrapper td {font-size: 1em; background : url('/pix/widget/table/bg.gif') repeat-x 0 0; color: black; border: none;  }
+
+/*Table header: nested table navigation */
+table.qsdefault tbody tr.nestedTblWrapper td table {width: 60%; /*border:1px solid red;*/ text-align: center; margin-left: 23%; margin-right: auto; }
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr {background-color: transparent; padding: 0; }
+table.qsdefault tbody tr.nestedTblWrapper td table tbody td {border: none; padding: 0; padding-top: 0.4em; padding-bottom: 0.4em; font-size: 2.5em; }
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td.posleft {width: 20%; text-align: left;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td.posCenter {width: 75%; text-align: center; font-weight: bold}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td.posCenter span {font-weight: normal; padding-left: 0.5em; padding-right: 0.5em;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td.posRight {width: 15%; text-align: right; padding-right: 1em;}
+
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span {}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.tblfilter {padding-left: 1em; color: Blue}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.tblfilter span.filterAcive {color: Green;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.txt_divider {font-size: 1.2em; color: Silver;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.txt_divider_black {margin-left: 1em; font-size: 1.2em; color: Black;}
+
+/* GOOGLESQUE Page links i.e.  < 1 2 3 4 5 > */
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td.gs-posleft {}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.gs-nav-text-results {padding:0 2em;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.pagenum {color: #000193;}
+
+
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.prevpage {padding-left:1em;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.nextpage {padding-left:1em;}
+
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span#gs-pagelinks {font-size:1.2em; color: #BDBDBD; padding-left: 1em; padding-right: 1em;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span#gs-pagelinks a {color: black;}
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span#gs-pagelinks span,
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span#gs-pagelinks span.greyedOut,
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span#gs-pagelinks a
+{padding: 0.15em 0.3em;}
+
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.greyedOut img,
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span img
+{padding-top: 0; padding-left: 0.3em; padding-right: 0.3em;}
+
+/* Table header: nested table navigation: Links */
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td a {color: black; }
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td a:hover {}
+
+/* Table header: nested table navigation: SPAN (disabled links) */
+table.qsdefault tbody tr.nestedTblWrapper td table tbody tr td span.recordnav span {font-size:1.2em; padding: 0.15em 0em;  border: 1px solid #F4F4F4; color: #C9C9C9}
+/* Table Footer */
+table.qsdefault tr.tableFooter {font-size: 0.9em; background-color: #305F90;  padding: 0.4em; height: 5px;}
+
+
+#moreInfo {margin-top: 4em;}
+/* Links */

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Welcome to Vegetarian Express</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Online Ordering Website for Vegetarian Express. Suppliers and consultants to the catering industry, we are now the UK’s premier specialist distributor of vegetarian and vegan products within foodservice."/>
+<link rel="canonical" href="https://orders.vegetarianexpress.co.uk/"/>
+<meta property="og:locale" content="en_UK"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Vegetarian Food Supplier"/>
+<meta property="og:description" content="Online Ordering Website for Vegetarian Express. Suppliers and consultants to the catering industry, we are now the UK’s premier specialist distributor of vegetarian and vegan products within foodservice."/>
+<meta property="og:url" content="https://orders.vegetarianexpress.co.uk/"/>
+<meta property="og:site_name" content="Vegetarian Express"/>
+<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "https://orders.vegetarianexpress.co.uk/", "potentialAction": { "@type": "SearchAction", "target": "https://orders.vegetarianexpress.co.uk/?s={search_term}", "query-input": "required name=search_term" } }</script>    
+    
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/skin/jb-default/css/normalize.css"/>    
+<link rel="stylesheet" type="text/css" href="/skin/default/layout.css" />
+    <!--<link rel="stylesheet" type="text/css" href="/css/import.css" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+
+<link rel="stylesheet" type="text/css" href="/skin/default/basket.css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />-->
+    
+<!--<script type="text/javascript" src="/js/prototype.lite.js"></script>
+<script type="text/javascript" src="/js/moo.fx.js"></script>
+<script type="text/javascript" src="/js/fat.js"></script>
+<script type="text/javascript" src="/js/taconite-parser.js"></script>
+<script type="text/javascript" src="/js/taconite-client.js"></script>
+<script type="text/javascript" src="/js/vegexp.js"></script>
+<script type="text/javascript" src="/skin/default/fx.js"></script>-->
+</head>
+<body>
+<div id="wrapper">
+<div id="head">
+<div id="head_top" class="clearfix">
+<span id="logo_wrapper" class="clearfix">
+<a id="vegexp_logo" href="http://www.vegetarianexpress.co.uk"><img src="/skin/jb-default/vegetarian-express-logo.jpg" alt="Vegetarian Express Website" /></a>
+</span>
+<span id="logo_wrapper_orderportal" class="clearfix">
+<a id="vegexp_orderportal_logo" href="/index.cfm"><img src="/skin/jb-default/order-online-title.jpg" alt="Vegetarian Express Ordering Portal" /></a>
+</span>
+<div id="searchbar">
+<form id="frmsearch" method="get" action="search.cfm">
+<fieldset>
+<label for="pQ">Search:</label>
+<span id="fldsearchshadow"><input type="text" id="pQ" name="pQ" /></span>
+<input type="submit" id="frmsubmit" value="Go" />
+</fieldset>
+<fieldset id="advsearchfs">
+<a id="advsearch" href="/advanced_search.cfm">Advanced Search</a>
+</fieldset>
+</form>
+</div>
+<div id="infobar">
+<span id="delDayNoLeftPad">Your next delivery day is:<span id="delDayValue">WED</span></span>
+</div>
+</div>
+<div id="head_tabs">
+<ol>
+<li class="tabamb "><a href="ambient.cfm">Ambient</a></li>
+<li class="tabfrz "><a href="frozen.cfm">Frozen</a></li>
+<li class="tabchl "><a href="chilled.cfm">Chilled</a></li>
+<li class="tabfav "><a href="favourites.cfm">Favourites</a></li>
+<li class="tabhome "><a href="index.cfm">Ordering Home</a></li>
+</ol>
+</div>
+</div>
+<div id="body_topborder"></div>
+<div id="body" class="clearfix">
+<div id="nav" class="clearfix">
+<div id="mainWSLinkWrap"	class="navbox">
+<div id="mainWSLink" class="navbox">
+<span><a href="http://www.vegetarianexpress.co.uk">Vegetarian Express Website</a></span>
+</div>
+</div>
+<div id="navTelNumWrap"	class="navbox">
+<div id="navTelNum" class="navbox">
+<span>01923 249714</span>
+</div>
+</div>
+<div id="navMyAccountWrap">
+<div id="navMyAccount">
+<a href="myAccount.cfm">My Account</a>
+<div id="navMyAccountLogin">
+Logged in: Matt Barfoot
+<span id="myAccountLinks"><a href="/myAccount.cfm">Edit my details</a> / <a href="/logout.cfm">logout</a></span>
+</div>
+</div>
+</div>
+<div id="navBasketWrap">
+<div id="navBasket">
+<a href="basket.cfm">Shopping Basket</a>
+<a id="basketEdit" href="basket.cfm"><img src="/skin/default/nav_basket_edit.gif" alt="View and edit my shopping basket" /></a>
+<div id="basketExpandWrapper">
+<div id="myBasketWrap">
+</div>
+<div id="baskettotal">
+TOTAL: <span id="grandTotal"></span>
+</div>
+</div>
+</div>
+</div>
+<div id="navCheckOutWrap"	class="navbox">
+<div id="navCheckOut" class="navbox">
+<a href="/checkout.cfm">Check out</a>
+</div>
+</div>
+<div id="navVeganWrap"	class="navbox">
+<div id="navVegan" class="navbox">
+<a href="/search.cfm?fldProdFilter=Vegan&showProducts=true">All Vegan</a>
+</div>
+</div>
+<div id="navGlutenFreeWrap"	class="navbox">
+<div id="navGlutenFree" class="navbox">
+<a href="/search.cfm?fldProdFilter=GlutenFree&showProducts=true">All Gluten Free</a>
+</div>
+</div>
+<div id="navOrganicWrap">
+<div id="navOrganic" class="navbox">
+<a href="/search.cfm?fldProdFilter=Organic&showProducts=true">All Organic</a>
+</div>
+</div>
+<div id="navCommentsWrap">
+<div id="navComments" class="navbox">
+<a href="/comment.cfm?refURL=/index.cfm">Comments</a>
+</div>
+</div>
+</div>
+<div id="content">
+<a href="##" id="a-tabpic-ambient"><img alt="ambient" id="tabpic-ambient" src="/resources/home-tabpic-ambient.gif"/></a>
+<a href="##" id="a-tabpic-frozen"><img alt="frozen" id="tabpic-frozen" src="/resources/home-tabpic-frozen.gif"/></a>
+<a href="##" id="a-tabpic-chilled"><img alt="chilled" id="tabpic-chilled" src="/resources/home-tabpic-chilled.gif"/></a>
+<a href="##" id="a-tabpic-favourites"><img alt="favourites" id="tabpic-favourites" src="/resources/home-tabpic-favourites.gif"/></a>
+<div id="welcome-msg-wrapper">
+<span id="welcome-msg-span">Welcome to our <span id="welcome-msg-span-green">Online Ordering Facility</span></span>
+<p>Please log in to place an order, or feel free just to browse our extensive range of products.</p>
+<p><span id="welcome-msg-span-nc">New to Vegetarian Express? </span><br/> Become a Customer and set up your account today by completing our <a href="/register.cfm">registration form</a>.
+<br/><br/> Alternatively call us on 01923 249714 or <a href="mailto:sales@vegexp.co.uk">email us</a> to discuss your credit requirements.
+</p>
+<p><span id="welcome-msg-span-ec">Already a Customer?<br/> <a href="/register.cfm">Register online</a></span> to start using our order portal.</p>
+</div>
+</div>
+<div id="ordhot_wrapper">
+<span id="hotline">Sales Office: <span id="hot_telnum">01923 249714</span></span>
+</div>
+</div>
+<div id="foot">
+<a href="legal.html">Legal Information</a>
+|
+<a href="privacy.html">Privacy Policy</a>
+|
+<a href="contact.cfm">Contact Us</a>
+<span id="copyR">&copy; 2006-2015 Vegetarian Express. All Rights Reserved</span>
+</div>
+</div>
+</body>
+</html>

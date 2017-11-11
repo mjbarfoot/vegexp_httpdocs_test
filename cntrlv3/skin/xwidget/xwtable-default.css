@@ -1,0 +1,106 @@
+/* Defaults */
+
+* {font-family: arial;}
+
+/* Body */
+
+
+/* Headings */
+h1, h2 {color: black; font-family: Arial;}
+#dataSrcSelector {position: absolute; top: 30px; right: 50px; font-size: 0.9em;}
+#dataSrcSelector span {padding-left: 50px;}
+/* Paragraphs */
+
+/* Lists */
+
+/* // ---------------------------------- Tables --------------------------------------------------------------------- //  */
+table.stocklist {padding: 0;margin: 0; border: 1px solid black; border-collapse:collapse;}
+table.stocklist caption {position: relative; text-align: left; margin-top: 0.6em; border: 0; font-size: 0.8em; color: Black; font-weight: bold; padding-bottom:0.8em; height: 1.4em; width: 100%;}
+table.stocklist caption span.captionText {position: absolute; display: block; top: 0em;}
+table.stocklist caption span.dataUpdated {position: absolute; display: block; right: 0em; top: 0em; text-align: center; padding-left: 2.5em; padding-right: 2.5em; color: #B22222; font-size: 1.2em; border: 2px solid #305F90; background-color: #F4F4F4; font-weight: bold;}
+
+/*********************************** Table header******************************************************************/  
+/* Table header: Wrapper */
+table.stocklist thead tr.nestedTblWrapper {border:1px solid black;}
+table.stocklist thead tr.nestedTblWrapper th {font-size: 1em; background : url('/pix/widget/table/bg.gif') repeat-x 0 0; /*background-color: #F2F2F2;*/ color: black;}
+
+/*Table header: nested table navigation */
+table.stocklist thead tr.nestedTblWrapper th table {width: 100%; }
+table.stocklist thead tr.nestedTblWrapper th table tbody tr {background-color: transparent; padding: 0;}
+table.stocklist thead tr.nestedTblWrapper th table tbody td {border: none; padding: 0; padding-top: 0.4em; padding-bottom: 0.4em; font-size: 1.2em;}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td.posleft {width: 20%; text-align: left;}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td.posCenter {width: 65%; text-align: center; font-weight: bold}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td.posCenter span {font-weight: normal; padding-left: 0.5em; padding-right: 0.5em;}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td.posRight {width: 15%; text-align: right; padding-right: 1em;}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td span.tblfilter {padding-left: 1em; color: Blue}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td span.tblfilter span.filterAcive {color: Green;}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td span.txt_divider {font-size: 1.2em; color: Silver;}
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td span.txt_divider_black {margin-left: 1em; font-size: 1.2em; color: Black;}
+
+/* Table header: nested table navigation: Links */
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td a {font-size:1.2em; padding: 0.15em 0.3em; background-color: none; border: 1px solid #EBEBEB; }
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td a:hover {padding: 0.15em 0.3em; background-color: #F0F0F0; border: 1px solid #AAAAAA;}
+
+/* Table header: nested table navigation: SPAN (disabled links) */
+table.stocklist thead tr.nestedTblWrapper th table tbody tr td span.recordnav span {font-size:1.2em; padding: 0.15em 0.3em; background-color: none; border: 1px solid #F4F4F4; color: #C9C9C9}
+
+/*********************************** Table Rows ******************************************************************/  
+table.stocklist tr {border: 0; background-color: White; font-size: 0.75em; border-right: 1px solid black;  border-left: 1px solid black;}
+table.stocklist tr th {font-weight: normal; background-color: #305F90; color: White; text-align: left; padding: 0.2em 0.5em;}
+table.stocklist tr th a, table.stocklist tr.altrow th a {color: White; text-decoration: underline;}
+
+/* Table Rows: colmn borders for left and right outermost cells */ 
+table.stocklist tr th.lhscol, table.stocklist tr td.lhscol, table.stocklist tr.altrow th.lhscol, table.stocklist tr.altrow td.lhscol {border-left: 1px solid black;} 
+table.stocklist tr th.rhscol, table.stocklist tr td.rhscol, table.stocklist tr.altrow th.rhscol, table.stocklist tr.altrow td.rhscol {border-right: 1px solid black;}
+
+/* Table Rows: if no records are found */ 
+table.stocklist tr td.norecfound {padding: 2em 1em; color: Red;}
+
+/* Table Rows: altrow background color */ 
+table.stocklist tr.altrow {border: 0;  background-color: #F4F4F4;}
+
+/* Table Rows: row borders */ 
+table.stocklist tr td, table.stocklist tr.altrow td {padding: 0.2em 0.5em; border-left:1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;}
+
+/* Table Rows: No bottom border on last row */ 
+table.stocklist tr.nobtmbdr td {border-bottom: none;}
+
+/* Table Row: Highlighter */
+table.stocklist tr.hilite, table.stocklist tr.altrow.hilite, table.stocklist tr.nobtmbdr.altrow.hilite, table.stocklist tr.nobtmbdr.hilite {background-color: #D5E0EE;}
+
+/* Table Rows: row links */
+table.stocklist tr td a, table.stocklist tr.altrow td a {color: Black; text-decoration: none;}
+table.stocklist tr td a:hover, table.stocklist tr.altrow td a:hover {color: Blue; text-decoration: underline;}
+
+/* /*********************************** Table Row Form Fields (Filter)******************************************************************/  
+#tblFilter input.frmFilterFld {width: 100px;}
+
+
+/* Table footer: Wrapper */
+table.stocklist tbody tr.nestedTblWrapperfoot {/*border:1px solid black;*/ border-top:#305F90}
+/* Table footer: Wrapper: border at bottom of table rows */
+table.stocklist tbody tr.nestedTblWrapperfoot td {font-size: 1em; background-color: #F2F2F2; color: black; border:1px solid black; border-top:1px solid #888888;}
+
+/*Table header: nested table navigation */
+table.stocklist tbody tr.nestedTblWrapperfoot td table {width: 100%; }
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr {background-color: transparent; padding: 0;}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td {border: none; padding: 0; font-size: 1.2em;}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td.posleft {width: 33%; text-align: left;}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td.posCenter {width: 34%; text-align: center; font-weight: bold}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td.posRight {width: 33%; text-align: right; padding-right: 1em;}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td span.tblfilter {padding-left: 1em; color: Blue}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td span.txt_divider {font-size: 1.2em; color: Silver;}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td span.txt_divider_black {margin-left: 1em; font-size: 1.2em; color: Black;}
+
+/* Table Footer: nested table navigation: Links */
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td span.tblActions {color: Blue}
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td a {font-size:1em; padding: 0.15em 0.3em; background-color: none; border: 1px solid #F2F2F2; }
+table.stocklist tbody tr.nestedTblWrapperfoot td table tbody tr td a:hover {padding: 0.15em 0.3em; background-color: #F0F0F0; border: 1px solid #AAAAAA;}
+
+
+/* Table Footer */
+table.stocklist tr.tableFooter {font-size: 0.8em; background-color: #305F90; border-top: 1px solid black; border-bottom:1px solid black; padding: 0.4em; border-left: 1px solid black; border-right: 1px solid black; height: 5px;}
+
+
+#moreInfo {margin-top: 4em;}
+/* Links */

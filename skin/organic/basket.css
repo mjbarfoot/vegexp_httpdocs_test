@@ -1,0 +1,96 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype - Shopping Basket                                  *
+*  Skin        :  Default													          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  20/04/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Shopping Basket: layout-------------------------------- */
+/*******************************************************************************/
+#nav #navBasketWrap 										{position: relative; background: #ADADAD; margin: 4px; 
+																 width: 191px; margin-top: 0.6em; margin-left: 3px;}
+#nav #navBasket											{position: relative; left: -2px; top: -2px; margin-left: 0px; border: 1px solid black; 
+																 background: White; width: 190px;}
+/* Shopping basket */
+#nav #navBasket a 										{background: url(/skin/organic/nav_basket.gif) no-repeat;}
+#nav #navBasket a:hover 								{background-position: 0 -28px;}																 
+
+/* if disabled when editing basket */
+#nav #navBasket span.basketdisabled					{font-size: 1.1em; color: #EB9B72; text-align: left; display:block; text-decoration:none; 
+																width: 160px; height: 24px; background-color: White; padding-left: 30px; padding-top: 4px; 
+																background: url(/skin/organic/nav_basket_dis.gif) no-repeat;}																
+																
+																 
+#nav #navBasket #basketEdit	 						{display: block; padding:0; margin:0; width: 17px; height: 20px; /*border: 1px red solid;*/
+																 position: absolute; top: 3px; right: 0px; background: none;}
+#nav #navBasket #basketEdit	img					{vertical-align: middle;}
+
+/*******************************************************************************/
+/* ------------------/ Shopping Basket: Wrapper------------------------------- */
+/*******************************************************************************/
+#basketExpandWrapper				{position: relative; padding-bottom:20px; padding-left: 3px; padding-right: 4px;}
+
+/*******************************************************************************/
+/* ------------------/ Shopping Basket: Contents------------------------------ */
+/*******************************************************************************/
+#myBasket 															{font-size: 0.7em; color: black;}
+#myBasket tr														{}
+#myBasket tr.firstrow									 	{font-weight: Bold;} 
+#myBasket tr.lastAdded											{color: #F36A19}
+#myBasket td														{}
+#myBasket #tblBasketEdit, #myBasket #tblBasketExpand	{text-align: right;}
+#myBasket #tblBasketEditLink								   {display: inline; text-align: right; background-image: none !important; color: #F36A19; text-decoration: underline;}
+
+#myBasket #tblBasketExpandLink, #myBasket #tblBasketContractLink		
+																		{display: inline; text-align: right; background-image: none !important; color: #F36A19; text-decoration: underline;}
+
+#myBasket #tblBasketTotal 										{}
+
+/*******************************************************************************/
+/* ------------------/ Shopping Basket: Total--------------------------------- */
+/*******************************************************************************/
+#basketExpandWrapper #baskettotal							{position: absolute; bottom: 2px; left: 4px; width: 177px; background-color: #FEEBD1; color: #F36A19; 
+																 		font-size: 0.8em; font-weight: bold; padding: 0 3px;}
+#basketExpandWrapper #baskettotal	span					{padding-left: 64px;}
+#basketExpandWrapper #baskettotal   span.movAlert					{display: inline-block; width: 62px; color: darkred; background: url('/resources/icon-alert-transparent.png') no-repeat; background-position: 110px 2px;}
+
+
+#basketExpandWrapper #baskettotal #basketcollapse	 	{display: block; width: 13px; height: 7px; position: absolute; top: -5px; right: 2px; background: none;}	
+#basketExpandWrapper #baskettotal #basketcollapse	img {vertical-align: middle;}
+
+
+
+/*******************************************************************************/
+/* ------------------/ Shopping Basket Editor: Total-------------------------- */
+/*******************************************************************************/
+#basketContainer {background-color: #FEF0DC; border: 1px solid #F8A574; padding:0.7em; }
+#basketTitle {display: block; font-size: 0.9em; margin-bottom: 6px; font-weight: bold;}
+
+/* myBasketItems Table */
+#myBasketItems {font-size: 0.8em; width: 670px; border:1px solid #F8A574; border-collapse: collapse;} 
+#myBasketItems th {text-align:left; padding: 3px; border: 1px solid #F8A574; background-color: #FDCD8D;} 
+#myBasketItems td {padding: 3px; border: 1px solid #F8A574;}
+#myBasketItems td a.basketItemDelete {color: Black; text-decoration: none;	font-weight: Bold;}
+#myBasketItems td a.basketItemDelete:hover {color: Black; text-decoration: none;	font-weight: Bold; text-decoration: underline;}
+#myBasketItems #myBasketItemsGrandTotal {font-weight: Bold; font-size: 1.2em;}
+#myBasketItems #myBasketItemsGrandTotal td {padding: 5px 3px;}
+#myBasketItems #myBasketItemsGrandTotal #myBasketItemsGrandTotalTxt {text-align: right;}
+#myBasketItemsFooter td {border: none; background-color: #FDCD8D;}
+
+
+
+/* form fields */
+input.fldQty	{width: 2em;}
+
+
+/* basket Actions : Prototype */
+#basketActions {display: block; font-size: 1em; margin-bottom: 6px; margin-top: 12px;  text-align: right; padding-right: 4px;}
+#basketActions input {border: 1px solid #F36A19; padding: 3px; color: #F36A19; font-weight: bold; background-color: #FEDFB3; text-decoration: none; font-size: 0.9em; margin-left: 20px; cursor: pointer; }
+#basketActions a {border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FEEBD1; text-decoration: none; font-size: 0.9em; margin-left: 20px;}
+#basketActions a:hover {border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FEDFB3; text-decoration: none;}
+#basketActions a  img { vertical-align: text-bottom; padding: 0px 5px;}

@@ -1,0 +1,109 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  layout for printing  skin: organic                           *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  14/03/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+* {list-style: none;	margin: 0; padding: 0; font-family: Arial, Sans-Serif; font-size: 1em;}
+
+img {border: 0;}
+fieldset {border: 0;}	
+
+/*******************************************************************************/
+/* ------------------/ Wrappers /--------------------------------------------- */
+/*******************************************************************************/
+#wrapper {width: 100%;	margin-left: 5px; margin-right: auto;}
+
+/*******************************************************************************/
+/* ------------------/ Header: Top (Logo, searchbar and infobar /------------- */
+/*******************************************************************************/
+#head {/*background: url(/pix/foot_bg.jpg) repeat-x 0px 145px;*/}
+#head_top {position: relative; /* border: 1px dotted black; */ margin-left: 0px; font-size: 1em;}
+#head_top #logo_wrapper {display: block; width: 290px; float: left;}
+#head_top #vegexp_logo {}
+#head_top #searchbar {font-size: 1.1em; display: none; width: 580px; 
+							float: left; margin-left: 70px; margin-top: 20px;}
+				
+#head_top #searchbar #fldsearchshadow {display: none;background-color: #ADADAD; position: relative; top: 2px;}
+#head_top #searchbar #fldsearchshadow #pQ {display: none;border: 1px solid black; font-size: 1em; 
+											position: relative; top:-3px; left:-2px; padding-left: 0.2em; 
+											padding-right: 0.2em; color: #F7881B}
+#head_top #searchbar #frmsubmit {display: none;background-color: White; cursor: pointer; border: none;
+											background: url(/skin/default/arrow_right.gif) no-repeat right;
+										   padding:0 10px 0 0; height: 24px;}
+#head_top #searchbar #advsearch {display: none;padding-left: 60px; padding-right: 15px; text-decoration: none; color: Black;
+										   background: url(/skin/default/arrow_right.gif) no-repeat right;}
+#head_top #infobar {display: none;position: relative;height: 20px;	font-size: 1.1em; display: block; width: 580px; 
+							float: left; margin-left: 70px; margin-top: 6px;}
+
+#head_top #infobar {display: none;}							
+
+/*******************************************************************************/
+/* ------------------/ Body Wrapper /----------------------------------------- */
+/*******************************************************************************/
+#body {margin-bottom:1em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Content  /--------------------------------------------- */
+/*******************************************************************************/
+#content {margin-left: 0px; width: 100%; /* width: 730px; *//* height: 300px;  border: 1px dotted black; */}
+
+/* product_list */
+#productListWrapper {margin-left: 0px; margin-bottom:1em; position: absolute; top: 90px; left: 5px;}
+#productList {width: 627px; /*width: 697px;*/ padding-top: 0.4em; /* padding-left: 10px; */ padding-right: 10px; padding-bottom:1em; margin-bottom: 1em;}
+
+/*******************************************************************************/
+/* ------------------/ Tip  /--------------------------------------------- */
+/*******************************************************************************/
+#breadCrumbTrail  {display: none;}				  
+				  
+/*******************************************************************************/
+/* ------------------/ Content: Homepage - Tab Pictures /--------------------- */
+/*******************************************************************************/
+#content #a-tabpic-favourites	 {display: block; float: left; margin-bottom: 0.6em;}
+#content #a-tabpic-ambient		 {display: block; float: left; margin-left: 6px; margin-bottom: 0.6em;}
+#content #a-tabpic-frozen 		 {display: block; float: left; margin-left: 4px; margin-bottom: 0.6em;}
+#content #a-tabpic-chilled 	 {display: block; float: left; margin-left: 6px; margin-bottom: 0.6em;}
+#content #a-tabpic-offers 		 {display: block; float: left; margin-left: 5px; margin-bottom: 0.6em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Content: Homepage - Welcome to Veg Express  /---------- */
+/*******************************************************************************/
+#content #welcome-msg-wrapper 	{width: 440px;}
+#content #welcome-msg-span 		{font-size: 1.7em;color: #716F6E;}
+#content #welcome-msg-span-green {color: #F36A19; font-weight: 600;}
+#content #welcome-msg-span-ec, #content #welcome-msg-span-nc {color: #F36A19;}
+#content #welcome-msg-wrapper p 	{font-size: 1.1em; color: black; letter-spacing: 0px;  margin-bottom: 0.6em;}
+#content #welcome-msg-wrapper p a {color: Black}
+#content #welcome-msg-wrapper p a:hover {color: #F36A19;}
+/********************************************************************************/
+/* ------------------/ Hotline /----------------------------------------------- */
+/********************************************************************************/
+#ordhot_wrapper {position: absolute; top: 2.4em; left: 325px;}
+#ordhot_wrapper #hotline {background-color: #FEDFB3; font-size: 1.4em; width: 300px; padding: 0.3em 0.6em; display: block;}
+#ordhot_wrapper #hotline #hot_telnum {color: #F36A19; font-size: 1em; background-color: transparent; display: inline;}
+#ordhot_wrapper #nextday {display: none;}
+
+
+div#pfoot {clear: both; height: 20px;}
+
+/*******************************************************************************/
+/* ------------------/ Footer /----------------------------------------------- */
+/*******************************************************************************/
+#foot {position: relative; height: 43px; background: url(/pix/foot_bg.jpg) repeat-x 0 0; 
+border-left: 1px solid #C0EAC2; border-right: 1px solid #C0EAC2; border-top: 1px solid #50C557;
+font-size: 1.4em; color: White; line-height: 1.6em;}
+
+/* Footer: links -----------------------------------------------------------*/
+#foot a {font-size: 0.6em; color: White; text-decoration: none; padding:0 1em;}
+#foot a:hover {text-decoration: underline;}
+#copyR {position: absolute;  right: 1em; top: 0.4em; color: #C0EAC2; font-size: 0.5em;}

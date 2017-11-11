@@ -1,0 +1,45 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype - Favourites		                                   *
+*  Skin        :  Default													          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  07/07/06                                                        *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Favourites: Wrapper ---------------------------------- */
+/*******************************************************************************/
+div#favWrapper {background-color: White; border: 1px solid #E69600; padding:0.7em;}
+
+/*******************************************************************************/
+/* ------------------/ Favourites: Content ---------------------------------- */
+/*******************************************************************************/
+div#favWrapper p {font-size: 0.9em; margin-bottom: 6px;}
+div#favWrapper p span#favTitle {display: block; margin-bottom: 6px; font-size: 1.1em; font-weight: bold; margin-bottom: 1em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Favourites: Hints and Tips List ------------------------ */
+/*******************************************************************************/
+div#favWrapper ul.favHints 			{font-size: 0.9em; margin-bottom: 6px;}
+div#favWrapper ul.favHints li 		{list-style: square; color: #996400; margin-left: 20px; margin-bottom: 3px;}
+div#favWrapper ul.favHints li 		{list-style: none; color: #996400; margin-left: 20px; margin-bottom: 0.8em; line-height: 22px;}
+div#favWrapper ul.favHints li span  {background: url(/resources/info_20.gif) 0px 0px no-repeat; margin-left: -24px; padding-left: 24px; color: #F36A19; font-weight: bold; padding-bottom: 3px; text-decoration: none;}
+/*div#favWrapper p ul.favHints li a:hover {color: #002B00; text-decoration: underline;}
+div#favWrapper p ul.favHints li span {color: #177730; font-size: 0.9em;}*/
+
+
+/*******************************************************************************/
+/* ------------------/ Favourites: Actions ---------------------------------- */
+/*******************************************************************************/
+/* basket Actions : Prototype */
+p#favButtons span#favActions {display: block; font-size: 1em; margin-bottom: 6px; margin-top: 12px;  text-align: right; padding-right: 4px; float: right;}
+div#favWrapper p span#favActions {display: block; font-size: 1em; margin-bottom: 6px; margin-top: 1.4em;  text-align: right; padding-right: 4px; float: right;}
+
+p#favButtons span#favActions input, div#favWrapper span#favActions input {border: 1px solid #F36A19; padding: 3px; color: #F36A19; font-weight: bold; background-color: #FEDFB3; text-decoration: none; font-size: 0.9em; margin-left: 20px; cursor: pointer; }
+p#favButtons span#favActions a, div#favWrapper span#favActions a {display: block; border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FEEBD1; text-decoration: none; font-size: 0.9em; margin-left: 20px;}
+p#favButtons span#favActions a:hover, div#favWrapper span#favActions a:hover {display: block; border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FEDFB3; text-decoration: none;}
+p#favButtons span#favActions a img, div#favWrapper span#favActions a  img { vertical-align: text-bottom; padding: 0px 5px;}

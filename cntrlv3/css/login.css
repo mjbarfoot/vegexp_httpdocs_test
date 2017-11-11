@@ -1,0 +1,16 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  QSApp                                                        *
+*  Site        :  http://qsapp.facilitator-mxes.com				          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  matt.barfoot@clearview-webmedia.co.uk                        *
+*  Created     :  19/07/2007                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+body {background-color: White; margin-left: auto; margin-right: auto; text-align: center; margin-top: 200px; font-family: Arial, sans-serif;}
+body form {margin-left: auto; margin-right: auto; position: relative; background-image: url(/skin/default/login_bg.gif); height: 150px; width: 400px; display: block;}
+body form input#q_username {position: absolute; left: 110px; top: 75px; width: 138px; color: #002469}
+body form input#q_password {position: absolute; left: 110px; top: 105px; width: 138px; color: #002469}
+body form input#frmSubmit  {position: absolute; left: 280px; top: 98px; color: #002469}
+body span  {color: red; font-weight: bold;}

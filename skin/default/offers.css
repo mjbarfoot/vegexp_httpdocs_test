@@ -1,0 +1,71 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype offers, skin: default                              *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  16/04/2006                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/* ------------------/ Offer Wrapper /--------------------------------------- */
+/*******************************************************************************/
+#offerWrap {}
+
+/*******************************************************************************/
+/* ------------------/ Offer Content /------------------------------------- */
+/*******************************************************************************/
+div#offerContent 	{background-color: White; border: 1px solid #8FCB5B; font-size: 0.9em;}
+
+/*******************************************************************************/
+/* ------------------/ Offer Description (Wrapper) /------------------------------------- */
+/*******************************************************************************/
+div#offerContent div#offerDesc {padding-top: 1em; padding-bottom: 1em;}
+div#offerContent div#offerDesc div.offerCat {position: relative; border: 1px solid #8FCB5B; margin: 0.6em;}
+
+
+/*******************************************************************************/
+/* ------------------/ Offer Title /------------------------------------------ */
+/*******************************************************************************/
+div#offerContent div#offerDesc div#offerTitle {position: relative; margin-bottom: 1em; font-size: 0.9em; color: #177730; padding: 0px; background-color: #DAEECA;}
+div#offerContent div#offerDesc div#offerTitle h1 {padding: 8px; font-size: 2.4em;}
+div#offerContent div#offerDesc div#offerTitle h1 a { color: #177730; text-decoration: none;}
+div#offerContent div#offerDesc div#offerTitle span#offerEnds {position: absolute; top: 1em; right: 1em; font-size: 1.2em; font-weight: bold;}
+div#offerContent div#offerDesc div#offerTitle span#offerDiscount {display: block; padding-left: 8px; padding-bottom: 6px;}
+
+
+
+/*******************************************************************************/
+/* ------------------/ Offer List /------------------------------------- */
+/*******************************************************************************/
+div#offerContent div#offerDesc ul.offerShorts li {position: relative; list-style: none; color: #002B00; margin-left: 10px; margin-bottom: 0.8em; line-height: 20px; clear: left; height: 102px; border-bottom: 1px dotted #AAE9AB; }
+div#offerContent div#offerDesc ul.offerShorts li a {background: url(/skin/default/arrow_right.gif) -2px -2px no-repeat; padding-left: 15px; padding-bottom: 3px; color: #002B00; text-decoration: none;}
+div#offerContent div#offerDesc ul.offerShorts li a:hover {color: #002B00; text-decoration: underline;}
+div#offerContent div#offerDesc ul.offerShorts li span.fldItemDesc  {color: #177730; font-weight: bold;}
+div#offerContent div#offerDesc ul.offerShorts li span.fldPriceInfo {padding-left: 1em; color: #177730; font-weight: normal;}
+div#offerContent div#offerDesc ul.offerShorts li span.fldDesc		 {display: block; width: 430px; color: #002B00; font-size: 0.9em;}
+div#offerContent div#offerDesc ul.offerShorts li img   {position: absolute; top: 5px; right: 6px; border:1px solid #177730; height: 90px;}
+
+ /* add to basket link */
+div#offerContent div#offerDesc ul.offerShorts li a.addtobasket {position: absolute; top: 40px; right: 120px; background: none; padding-left: 0px; padding: 3px; border: 1px solid #8FCB5B; color: #217A36; text-decoration: none;}
+div#offerContent div#offerDesc ul.offerShorts li a.addtobasket:hover {border: 1px solid #177730; padding: 3px; color: #177730; background-color: #CBE7B3;}
+/* add to basket link - no description of thumb - spacing is different */
+div#offerContent div#offerDesc ul.offerShorts li a.addtobasketnoimage {position: absolute; top: 0px; right: 120px; background: none; padding-left: 0px; padding: 3px; border: 1px solid #8FCB5B; color: #217A36; text-decoration: none;}
+div#offerContent div#offerDesc ul.offerShorts li a.addtobasketnoimage:hover {border: 1px solid #177730; padding: 3px; color: #177730; background-color: #CBE7B3;}
+
+/*******************************************************************************/
+/* ------------------/ Offer : Maximise/ Minimise /---------------------------- */
+/*******************************************************************************/
+div#offerContent div#offerDesc div.offerCat a.minimise,div#offerContent div#offerDesc div.offerCat a.maximise
+{position: absolute; bottom: 0.4em; color: #8FCB5B; font-size: 0.8em;  background: url(/skin/default/nav_basket_collapse.gif) right no-repeat;
+padding: 2px; padding-right: 14px;  border: 1px solid #8FCB5B; text-decoration: none }
+div#offerContent div#offerDesc div.offerCat a.maximise {right: 6em; background: url(/skin/default/nav_basket_expand.gif) right 8px no-repeat;}
+div#offerContent div#offerDesc div.offerCat a.minimise {right: 1em; background: url(/skin/default/nav_basket_collapse.gif) right 8px no-repeat;}
+div#offerContent div#offerDesc div.offerCat a.minimise:hover, div#offerContent div#offerDesc div.offerCat a.maximise:hover
+{color: #177730; text-decoration: underline;}

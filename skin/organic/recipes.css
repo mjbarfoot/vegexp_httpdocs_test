@@ -1,0 +1,118 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype recipes, skin: Organic                             *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  16/04/2006                                                   *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Defaults /--------------------------------------------- */
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+/* ------------------/ Recipe Wrapper /--------------------------------------- */
+/*******************************************************************************/
+#recipeWrap {margin:0; padding:0;}
+
+/*******************************************************************************/
+/* ------------------/ Recipe Navigation /------------------------------------- */
+/*******************************************************************************/
+/* #recipeNav {background-color: #FFE9CE; float: left; width: 180px; border: 1px solid #FFA940; padding:6px; margin-left: 1em; }
+#recipeNav h2 a {color: #F36A19; font-size: 0.9em; font-weight: bold; } */
+
+/*******************************************************************************/
+/* ------------------/ Recipe Content /------------------------------------- */
+/*******************************************************************************/
+div#recipeContent 	{background-color: White; 	float: left; border: 1px solid #FFA940; padding:6px; font-size: 0.9em;}
+div#recipeContent div#recipeTitle {margin: 0; font-size: 0.9em; color: #F36A19; padding: 8px 8px 8px 6px; background-color: #FFD199;}
+div#recipeContent div#recipeTitle h1 {font-size: 2.4em;}
+div#recipeContent div#recipeTitle span.titleDetail {color: #FF8F04;}
+div#recipeContent p	{margin: 0.8em 0;}
+
+/* Recipe: Categories */
+div#recipeContent div#recipeDesc {padding-top: 0px; padding-bottom: 1em;}
+div#recipeContent div#recipeDesc p {font-size: 0.9em; line-height: 19px;}
+div#recipeContent div#recipeDesc div.recipeCat {position: relative; border: 1px solid #FFA940; margin: 0em 0em 1em; padding: 0px 6px 6px 6px; width: 492px;}
+div#recipeContent div#recipeDesc div.recipeCat h2  {font-size: 1.4em; color: #F36A19; text-decoration: none;}
+div#recipeContent div#recipeDesc div.recipeCat img {float: right; padding-left: 2px; padding-bottom: 2em;}
+
+/*******************************************************************************/
+/* ------------------/ Default List style/------------------------------------ */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc ul li {list-style: square; color: #002B00; margin-left: 20px; margin-bottom: 3px;}
+
+/*******************************************************************************/
+/* ------------------/ List of Recipes by Recipe Category /------------------- */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc ul.recipeShorts li {list-style: none; color: #8E4F00; margin-left: 0px; margin-bottom: 0.8em; line-height: 20px;}
+div#recipeContent div#recipeDesc ul.recipeShorts li a {background: url(/skin/organic/arrow_right.gif) -2px -2px no-repeat; padding-left: 15px; padding-bottom: 3px; color: #002B00; text-decoration: none;}
+div#recipeContent div#recipeDesc ul.recipeShorts li a:hover {color: #8E4F00; text-decoration: underline;}
+div#recipeContent div#recipeDesc ul.recipeShorts li span {color: #F36A19; font-size: 0.9em;}
+
+/*******************************************************************************/
+/* ------------------/ List of Recipes for a specified Product /-------------- */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc p.recipeItem 		{}
+div#recipeContent div#recipeDesc p.recipeItem a 	{background: url(/skin/organic/arrow_right.gif) -2px -2px no-repeat; padding-left: 15px; padding-bottom: 3px; color: #8E4F00; text-decoration: none;}
+div#recipeContent div#recipeDesc p.recipeItem a:hover {color: #8E4F00; text-decoration: underline;}
+div#recipeContent div#recipeDesc p.recipeItem span	{color: #F36A19; font-size: 0.8em;}
+div#recipeContent div#recipeDesc div.recipeCat ul   {margin-bottom: 1em;}
+div#recipeContent div#recipeDesc div.recipeCat ul li {font-size:0.9em;}
+
+/*******************************************************************************/
+/* ------------------/ Recipes Images /-------------------------------------- */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc div#recipeImg		 {float: right; margin: 6px 0px 6px 6px; padding: 0;}
+div#recipeContent div#recipeDesc div#recipeImg	img {border: 1px solid #FFA940;}
+
+/*******************************************************************************/
+/* ------------------/ Popular Recipts /-------------------------------------- */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc div#recipeRHS {float: right; clear: both;}
+div#recipeContent div#recipeDesc div#recipeRHS div#recipePopular  {margin: 0em 0px 1em 6px; border: 1px solid #F36A19; padding:6px; font-size: 0.9em;	
+																	  width: 146px; color: #F36A19; background-color: #FFD7A6;}
+div#recipeContent div#recipeDesc div#recipeRHS div#recipePopular ul li {list-style: none; color: #F36A19; margin-bottom: 5px; margin-left: 0;}
+div#recipeContent div#recipeDesc div#recipeRHS div#recipePopular a {text-decoration: none; color: #F36A19;}
+div#recipeContent div#recipeDesc div#recipeRHS div#recipePopular a:hover {text-decoration: underline; color: #F36A19}
+
+/*******************************************************************************/
+/* ------------------/ Add your Own Recipe /------------------------------------ */
+/*******************************************************************************/	
+div#recipeContent div#recipeDesc div#recipeRHS div#addYourRecipe {margin: 0em 0px 1em 6px; border: 1px solid #F36A19; padding:6px; font-size: 0.9em;	
+																	  width: 146px; color: #F36A19; background-color: #FFD7A6;}
+div#recipeContent div#recipeDesc div#recipeRHS div#addYourRecipe a {color: #F36A19;}
+
+/*******************************************************************************/
+/* ------------------/ Maximise / Minimise Links /----------------------------- */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc div.recipeCat a.minimise, div#recipeContent div#recipeDesc div.recipeCat a.maximise
+{position: absolute; bottom: 0.4em; color: #FFA940; font-size: 0.8em;
+																			  background: url(/skin/organic/nav_basket_collapse.gif) right no-repeat;
+																			  padding: 2px; padding-right: 14px;  border: 1px solid #FFA940; text-decoration: none }
+div#recipeContent div#recipeDesc div.recipeCat a.maximise {right: 6em; background: url(/skin/organic/nav_basket_expand.gif) right 8px no-repeat;}
+div#recipeContent div#recipeDesc div.recipeCat a.minimise {right: 1em; background: url(/skin/organic/nav_basket_collapse.gif) right 8px no-repeat;}
+div#recipeContent div#recipeDesc div.recipeCat a.minimise:hover, div#recipeContent div#recipeDesc div.recipeCat a.maximise:hover
+{color: #F36A19; text-decoration: underline;}
+
+/*******************************************************************************/
+/* ------------------/ Recipe Actions /----------------------------- */
+/*******************************************************************************/
+div#recipeContent div#recipeTitle span#printRecipe {position: absolute; top: 6em; right: 2em; }
+div#recipeContent div#recipeTitle span#printRecipe  a.recipeAction 		 {display: block; border: 1px solid #FFA940; padding: 3px;  color: #F36A19; text-decoration: none; padding-left: 30px; background: url(/resources/icon_print.gif) 2px 0px no-repeat;}
+div#recipeContent div#recipeTitle span#printRecipe  a.recipeAction:hover {display: block; border: 1px solid #F36A19; padding: 3px; color: #F36A19; text-decoration: none;  padding-left: 30px; background: url(/resources/icon_print.gif) 2px 0px no-repeat; background-color: #FFD49F;}
+div#recipeContent div#recipeDesc  a.recipeAction {padding-left: 0px; padding: 3px; border: 1px solid #FFA940; color: #F36A19; text-decoration: none;}
+div#recipeContent div#recipeDesc  a.recipeAction:hover {border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FFD49F;}
+
+/*******************************************************************************/
+/* ------------------/ Back to List Links/------------------------------------ */
+/*******************************************************************************/
+div#recipeContent div#recipeDesc a#backToList {border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FFD49F; text-decoration: none; font-size: 0.9em; }
+div#recipeContent div#recipeDesc a#backToList:hover {border: 1px solid #F36A19; padding: 3px; color: #F36A19; background-color: #FFD49F; text-decoration: none;}
+
+/*******************************************************************************/
+/* ------------------/ Add your Own Recipe /------------------------------------ */
+/*******************************************************************************/																 

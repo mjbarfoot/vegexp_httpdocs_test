@@ -1,0 +1,17 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  xwidget xwform                                               *
+*  Site        :  http://cntrl.clearview-webmedia.co.uk			          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  matt.barfoot@clearview-webmedia.co.uk                        *
+*  Created     :  08/10/207		                                              *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+form.xwform {margin-top: 1em; margin-bottom: 1em;border: 1px solid #ccc; background-color: #FAFAFA; padding: 1em; font-size: 0.8em; }
+form.xwform fieldset {margin:1em 0;}
+form.xwform label {margin-right: 1em;}
+form.xwform input {margin-right: 1em;}
+
+form.xwform div.fieldset_title {margin: 1em 0; border-bottom: 1px solid #ccc; font-size: 1.1em; color: #656565}
+form.xwform fieldset p {margin: 6px 0;}

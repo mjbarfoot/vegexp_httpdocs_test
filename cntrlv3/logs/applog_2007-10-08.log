@@ -1,0 +1,125 @@
+Log started: 08/10/2007 5:08:03 PM
+5:08:03 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:08:03 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:08:03 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:08:03 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:08:12 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:08:14 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:08:14 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:08:32 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:08:32 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:36:37 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:36:37 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:36:37 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:36:37 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:36:39 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:36:40 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:36:41 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:36:44 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:36:46 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:37:20 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:37:20 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:37:20 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:37:20 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:37:22 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:37:23 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:37:23 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:37:26 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:37:27 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:38:09 PM ReqType: tab Module: customers Tab: list_customerslist_customers Result:  Message: 
+5:38:10 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:38:10 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:38:10 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:38:21 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for LEHBRO2
+5:38:21 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:40:30 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:40:32 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:40:32 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:40:36 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:40:36 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:42:06 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:42:07 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:42:07 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:42:12 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:42:12 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:43:01 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:43:01 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:43:05 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:43:06 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:43:07 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:43:09 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:43:09 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:43:13 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:43:13 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:43:47 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:43:49 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:43:49 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:43:53 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:43:53 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:44:30 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:44:30 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:44:32 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:44:34 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:44:34 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:44:38 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:44:38 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:45:05 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:45:06 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:45:06 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:45:10 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:45:11 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:45:30 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:45:32 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:45:32 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:45:36 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:45:36 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:52:18 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:52:18 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:52:18 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:52:18 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:52:20 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:52:22 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:52:22 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:52:27 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for LEHBRO2
+5:52:29 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:53:00 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:53:01 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:53:01 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:53:01 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:53:03 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:53:04 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:53:04 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:53:11 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for LEHBRO2
+5:53:13 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:53:48 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:53:48 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:53:49 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:53:49 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:53:50 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:53:51 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:53:51 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:53:55 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:53:55 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:54:29 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:54:29 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:54:29 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:54:29 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:54:31 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:54:32 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:54:32 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:54:35 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:54:36 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:56:24 PM Application: QSApp_BD79E33B5E61D0A35A3D3D1D2807F1F3 started
+5:56:24 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:56:25 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:56:25 PM ReqType:  Module: dashboard Tab:  Result:  Message: 
+5:56:26 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:56:28 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:56:28 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:56:32 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for 20/20
+5:56:32 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:58:46 PM ReqType:  Module: customers Tab:  Result:  Message: 
+5:58:48 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result:  Message: 
+5:58:48 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 
+5:58:54 PM ReqType: tab Module: customers Tab: setup_customersetup_customer Result: success Message: Fetched customer data for LEHBRO2
+5:58:54 PM ReqType: debug Module: dashboard Tab:  Result:  Message: 

@@ -1,0 +1,56 @@
+/*******************************************************************************
+*                                                                              *
+*  File/Desc	:  prototype - Register                                         *
+*  Skin        :  Neutral													          		 *
+*  Site        :  http://www.vegexp.co.uk								          		 *
+*  Author      :  Matt Barfoot - Clearview Webmedia Limited                    *
+*  Contact Info:  sales@clearview-webmedia.co.uk                               *
+*  Created     :  24/04/06                                                     *
+*  History     : 					                                                 *
+*******************************************************************************/
+
+/*******************************************************************************/
+/* ------------------/ Registration Form -------------------------------------- */
+/*******************************************************************************/
+
+/* ------------------/ Container /-------------------------------------------- */
+#regFormContainer {background-color: White; border: 1px solid Black; padding:0.7em; }
+
+
+/* ------------------/ Form /-------------------------------------------- */
+#regFormContainer form 										{font-size: 0.8em;}
+#regFormContainer form span.fieldsetTitle				{font-weight: Bold;}
+#regFormContainer form fieldset 							{margin: 0.5em 0em 1.5em; padding: 0.5em 0em; border-top: 1px solid black; border-bottom: 1px solid #B9B9B9;}
+#regFormContainer form fieldset p						{margin: 0.6em 0em; clear: left}
+#regFormContainer form fieldset p label				{text-align: right; float: left; width:125px; padding-right: 20px;}
+#regFormContainer form fieldset p label.long			{text-align: right; float: left; width:250px; padding-right: 10px;}
+#regFormContainer form fieldset p label.extralong  {text-align: left; float: left; width:530px; padding-right: 10px;}
+#regFormContainer form fieldset p label.long span	{padding-left: 20px;}
+#regFormContainer form fieldset p label.fldinline  {text-align: right; float: none; width:100px; padding-right: 10px; padding-left: 10px;}
+#regFormContainer form fieldset p input				{width: 357px; color: #177730}
+#regFormContainer form fieldset p input.small		{width: 125px; }
+#regFormContainer form fieldset p input.med			{width: 200px; }
+#regFormContainer form fieldset p input.btn			{width: 125px; } 
+#regFormContainer form fieldset p input.radiobtn	{width: 25px; } 
+#regFormContainer form fieldset p input.readonly	{background-color: white; border:0;}
+
+#notifySuccess {font-size: 1.1em;}
+#regThanksContainer {background-color: White; border: 1px solid Black; padding:0.7em;}
+#regThanksContainer p {font-size: 0.8em; margin: 1em 0em;}
+
+/* ------------------/ Thanks page: Shopper actions i.e. continue /-------------------------------------------- */
+#shopperActions {display: block; font-size: 1em; text-align: left;}
+#shopperActions a {border: 1px solid #177730; padding: 3px; color: #177730; background-color: #DEF0D0; text-decoration: none; font-size: 0.9em; margin-left: 20px;}
+#shopperActions a:hover {border: 1px solid #177730; padding: 3px; color: #177730; background-color: #CBE7B3; text-decoration: none;}
+#shopperActions a  img { vertical-align: text-bottom; padding: 0px 5px;}
+
+
+/* ------------------/ Thanks page: Any Questions? /-------------------------------------------- */
+#questions {background-image: url(/pix/icon-info.gif); background-position: top left; background-repeat: no-repeat; padding-left: 70px; margin-bottom: 1em;} 
+
+
+/* ------------------/ myAccount FORM /-------------------------------------------- */ 
+#regFormContainer form fieldset p span.myAccountValue {width: 357px; color: #177730}
+
+#AccountUpdated {font-size: 1em; display: block; margin: 1em 0em; color: Green; font-weight: Bold}
+	

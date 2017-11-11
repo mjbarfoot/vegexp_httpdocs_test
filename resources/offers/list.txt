@@ -1,0 +1,17 @@
+ Volume in drive D is VAIO
+ Volume Serial Number is F867-FE21
+
+ Directory of D:\JRun4\servers\vegexp\cfusion-war\resources\offers
+
+09/06/2006  17:25             8,601 breaded-shrooms-thumb.jpg
+09/06/2006  16:41            18,534 breaded-shrooms.jpg
+09/06/2006  17:26             5,323 green-olive-tap-thumb.jpg
+09/06/2006  16:33            10,100 green-olive-tap.jpg
+09/06/2006  17:27             6,112 Kalamata-Tapenade-thumb.jpg
+09/06/2006  16:36            10,859 Kalamata-Tapenade.jpg
+09/06/2006  17:26            14,160 onion-bhaji-thumb.jpg
+09/06/2006  16:37            14,160 onion-bhaji.jpg
+09/06/2006  17:26             5,572 potato-wedges-thumb.jpg
+09/06/2006  16:37            10,011 potato-wedges.jpg
+              10 File(s)        103,432 bytes
+               0 Dir(s)   3,803,311,616 bytes free
